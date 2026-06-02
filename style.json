@@ -94,7 +94,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 256
     }
   },
   "sprite": "",
@@ -113,7 +113,7 @@
       "type": "raster",
       "source": "sg-topo",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -191,7 +191,7 @@
       "source": "sg-fall-risk",
       "minzoom": 13,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -241,15 +241,14 @@
         "fill-opacity": [
           "interpolate",
           [
-            "exponential",
-            1.5
+            "linear"
           ],
           [
             "zoom"
           ],
           5,
           0,
-          5.5,
+          5.1,
           0.4,
           9.5,
           0.4,
@@ -284,11 +283,11 @@
           0,
           6,
           0.7,
-          11,
+          10,
           0
         ],
         "line-color": "#000000",
-        "line-width": 1
+        "line-width": 2
       }
     },
     {
@@ -440,5 +439,6 @@
       }
     }
   ],
-  "id": "2s9ycmy"
+  "id": "2s9ycmy",
+  "owner": "Ulysse Descamps"
 }
