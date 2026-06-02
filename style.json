@@ -1,9 +1,7 @@
 {
   "version": 8,
   "name": "Topo",
-  "metadata": {
-    "maputnik:renderer": "mlgljs"
-  },
+  "metadata": {"maputnik:renderer": "mlgljs"},
   "sources": {
     "sg-topo": {
       "type": "raster",
@@ -104,17 +102,13 @@
       "id": "photo",
       "type": "raster",
       "source": "photo-IGN",
-      "layout": {
-        "visibility": "visible"
-      }
+      "layout": {"visibility": "visible"}
     },
     {
       "id": "topo",
       "type": "raster",
       "source": "sg-topo",
-      "layout": {
-        "visibility": "visible"
-      }
+      "layout": {"visibility": "visible"}
     },
     {
       "id": "avalanche-bulletins",
@@ -122,16 +116,11 @@
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
-      "layout": {
-        "visibility": "visible"
-      },
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": [
           "match",
-          [
-            "get",
-            "rdlin"
-          ],
+          ["get", "rdlin"],
           1,
           "#ccff66",
           2,
@@ -148,13 +137,8 @@
         "fill-outline-color": "rgba(19, 19, 19, 1)",
         "fill-opacity": [
           "interpolate",
-          [
-            "exponential",
-            1.5
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.5],
+          ["zoom"],
           5,
           0,
           5.5,
@@ -172,22 +156,13 @@
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
+      "filter": ["all"],
+      "layout": {"visibility": "visible"},
       "paint": {
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            1.5
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.5],
+          ["zoom"],
           5,
           0,
           6,
@@ -204,53 +179,28 @@
       "type": "raster",
       "source": "sg-SACM5",
       "minzoom": 13,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-opacity": {
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              0.4
-            ]
-          ]
-        }
-      }
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": {"stops": [[13, 0], [13.5, 0.4]]}}
     },
     {
       "id": "overlay-ATHM",
       "type": "raster",
       "source": "sg-ATHM",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-opacity": 0.4
-      }
+      "layout": {"visibility": "none"},
+      "paint": {"raster-opacity": 0.4}
     },
     {
       "id": "overlay-corridors",
       "type": "raster",
       "source": "sg-corridors",
-      "layout": {
-        "visibility": "none"
-      }
+      "layout": {"visibility": "none"}
     },
     {
       "id": "overlay-fall-risk",
       "type": "raster",
       "source": "sg-fall-risk",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-opacity": 0.4
-      }
+      "layout": {"visibility": "none"},
+      "paint": {"raster-opacity": 0.4}
     },
     {
       "id": "routes",
@@ -258,21 +208,13 @@
       "source": "sg-routes",
       "source-layer": "Alps_Routes",
       "minzoom": 11,
-      "layout": {
-        "line-cap": "round",
-        "visibility": "visible"
-      },
+      "layout": {"line-cap": "round", "visibility": "visible"},
       "paint": {
         "line-color": "rgba(0, 0, 255, 1)",
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            8
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 8],
+          ["zoom"],
           11,
           0,
           11.1,
@@ -280,13 +222,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           11.5,
@@ -303,9 +240,7 @@
       "source-layer": "Alps_Segments_3035",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
+      "filter": ["all"],
       "layout": {
         "visibility": "none",
         "line-cap": "square",
@@ -314,13 +249,8 @@
       "paint": {
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           14,
@@ -339,9 +269,7 @@
       "source-layer": "Alps_Segments_3035",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
+      "filter": ["all"],
       "layout": {
         "line-cap": "round",
         "visibility": "none",
@@ -350,16 +278,7 @@
       "paint": {
         "line-color": [
           "match",
-          [
-            "floor",
-            [
-              "to-number",
-              [
-                "get",
-                "segRisk"
-              ]
-            ]
-          ],
+          ["floor", ["to-number", ["get", "segRisk"]]],
           0,
           "#33CC66",
           1,
@@ -372,13 +291,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           14,
@@ -386,13 +300,8 @@
         ],
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            8
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 8],
+          ["zoom"],
           11,
           0,
           11.1,
