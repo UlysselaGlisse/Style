@@ -143,30 +143,69 @@
       "id": "overlay-ATHM",
       "type": "raster",
       "source": "sg-ATHM",
+      "minzoom": 13,
       "layout": {
         "visibility": "none"
       },
       "paint": {
-        "raster-opacity": 0.4
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
       }
     },
     {
       "id": "overlay-corridors",
       "type": "raster",
       "source": "sg-corridors",
+      "minzoom": 13,
       "layout": {
         "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
       }
     },
     {
       "id": "overlay-fall-risk",
       "type": "raster",
       "source": "sg-fall-risk",
+      "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": 0.4
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
       }
     },
     {
