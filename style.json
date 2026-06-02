@@ -4,9 +4,18 @@
   "metadata": {
     "maputnik:renderer": "mlgljs"
   },
+  "light": {
+    "color": "rgba(255, 219, 0, 1)"
+  },
+  "projection": {
+    "type": ""
+  },
   "sources": {
     "sg-topo": {
       "type": "raster",
+      "metadata": {
+        "ee": "ered"
+      },
       "tiles": [
         "https://map.skitourenguru.com/AP_SG_TOPO_MINI_PRIVATE.tms?x={x}&y={y}&z={z}"
       ],
@@ -37,7 +46,7 @@
       "maxzoom": 15,
       "scheme": "xyz"
     },
-    "sg-ATHM": {
+    "sg-athm": {
       "type": "raster",
       "tiles": [
         " https://map.skitourenguru.com/AP_SG_ATHM.tms?x={x}&y={y}&z={z}"
@@ -47,7 +56,7 @@
       "scheme": "xyz",
       "tileSize": 128
     },
-    "sg-SACM5": {
+    "sg-sacm5": {
       "type": "raster",
       "tiles": [
         " https://map.skitourenguru.com/AP_SG_SACM5.tms?x={x}&y={y}&z={z}"
@@ -57,7 +66,7 @@
       "scheme": "xyz",
       "tileSize": 128
     },
-    "sg-Symbols": {
+    "sg-symbols": {
       "type": "vector",
       "tiles": [
         "https://map.skitourenguru.com/Alps_Symbols.tms?x={x}&y={y}&z={z}"
@@ -76,7 +85,7 @@
       "scheme": "xyz",
       "tileSize": 128
     },
-    "sg-fall-risk": {
+    "sg-fallrisk": {
       "type": "raster",
       "tiles": [
         "https://map.skitourenguru.com/AP_SG_FDRISK.tms?x={x}&y={y}&z={z}"
@@ -86,7 +95,7 @@
       "scheme": "xyz",
       "tileSize": 128
     },
-    "photo-IGN": {
+    "photo-ign": {
       "type": "raster",
       "tiles": [
         "https://data.geopf.fr/wmts?layer=ORTHOIMAGERY.ORTHOPHOTOS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix={z}&TileCol={x}&TileRow={y}"
@@ -95,10 +104,17 @@
       "maxzoom": 24,
       "scheme": "xyz",
       "tileSize": 256
+    },
+    "sg-webcams": {
+      "type": "geojson",
+      "data": "https://alpinemeteo.com/data/stations/allstations_24h.geojson"
     }
   },
   "sprite": "",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "transition": {
+    "duration": 300
+  },
   "layers": [
     {
       "id": "background",
@@ -110,9 +126,9 @@
     {
       "id": "photo",
       "type": "raster",
-      "source": "photo-IGN",
+      "source": "photo-ign",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -120,16 +136,26 @@
       "type": "raster",
       "source": "sg-topo",
       "layout": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "id": "overlay-raster",
+      "type": "background",
+      "layout": {
         "visibility": "none"
+      },
+      "paint": {
+        "background-color": "rgba(0, 0, 0, 0)"
       }
     },
     {
       "id": "overlay-slopes",
       "type": "raster",
-      "source": "sg-SACM5",
+      "source": "sg-sacm5",
       "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -149,7 +175,7 @@
     {
       "id": "overlay-ATHM",
       "type": "raster",
-      "source": "sg-ATHM",
+      "source": "sg-athm",
       "minzoom": 13,
       "layout": {
         "visibility": "none"
@@ -193,9 +219,9 @@
       }
     },
     {
-      "id": "overlay-fall-risk",
+      "id": "overlay-fallrisk",
       "type": "raster",
-      "source": "sg-fall-risk",
+      "source": "sg-fallrisk",
       "minzoom": 13,
       "layout": {
         "visibility": "none"
@@ -213,88 +239,6 @@
             ]
           ]
         }
-      }
-    },
-    {
-      "id": "avalanche-bulletins",
-      "type": "fill",
-      "source": "sg-bulletins",
-      "minzoom": 5,
-      "maxzoom": 14,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": [
-          "match",
-          [
-            "get",
-            "rdlin"
-          ],
-          1,
-          "#ccff66",
-          2,
-          "#ffff00",
-          3,
-          "#ff9900",
-          4,
-          "#ff0000",
-          5,
-          "#ff0000",
-          "#cccccc"
-        ],
-        "fill-antialias": true,
-        "fill-outline-color": "rgba(19, 19, 19, 1)",
-        "fill-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0,
-          5.1,
-          0.4,
-          9.5,
-          0.4,
-          10,
-          0
-        ]
-      }
-    },
-    {
-      "id": "avalanche-bulletins-outline",
-      "type": "line",
-      "source": "sg-bulletins",
-      "minzoom": 5,
-      "maxzoom": 14,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-opacity": [
-          "interpolate",
-          [
-            "exponential",
-            1.5
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0,
-          6,
-          0.7,
-          10,
-          0
-        ],
-        "line-color": "#000000",
-        "line-width": 2
       }
     },
     {
@@ -320,7 +264,7 @@
           ],
           11,
           0,
-          11.1,
+          11.05,
           1
         ],
         "line-width": [
@@ -444,6 +388,157 @@
           1
         ]
       }
+    },
+    {
+      "id": "avalanche-bulletins-coldperiode",
+      "type": "fill",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "in",
+        "dayper",
+        "DAY_PERIODE",
+        "COLD_PERIODE"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#ccff66",
+          2,
+          "#ffff00",
+          3,
+          "#ff9900",
+          4,
+          "#ff0000",
+          5,
+          "#ff0000",
+          "#cccccc"
+        ],
+        "fill-antialias": true,
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          5.05,
+          0.5,
+          9.5,
+          0.5,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "id": "avalanche-bulletins-hotperiode",
+      "type": "fill",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "==",
+        "dayper",
+        "HOT_PERIODE"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#ccff66",
+          2,
+          "#ffff00",
+          3,
+          "#ff9900",
+          4,
+          "#ff0000",
+          5,
+          "#ff0000",
+          "#cccccc"
+        ],
+        "fill-antialias": true,
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          5.05,
+          0.4,
+          9.5,
+          0.4,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "id": "avalanche-bulletins-outline",
+      "type": "line",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "all",
+        [
+          "in",
+          "dayper",
+          "DAY_PERIODE",
+          "COLD_PERIODE"
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-opacity": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          6,
+          0.4,
+          10,
+          0
+        ],
+        "line-color": "rgba(0, 0, 0, 1)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "webcams",
+      "type": "circle",
+      "source": "sg-webcams"
     }
   ],
   "id": "2s9ycmy",
