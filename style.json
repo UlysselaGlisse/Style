@@ -37,7 +37,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 128,
+      "volatile": true
     },
     "sg-bulletins": {
       "type": "geojson",
@@ -50,7 +51,8 @@
       ],
       "minzoom": 0,
       "maxzoom": 15,
-      "scheme": "xyz"
+      "scheme": "xyz",
+      "volatile": true
     },
     "sg-routes-risks": {
       "type": "vector",
@@ -59,7 +61,8 @@
       ],
       "minzoom": 0,
       "maxzoom": 15,
-      "scheme": "xyz"
+      "scheme": "xyz",
+      "volatile": true
     },
     "sg-athm": {
       "type": "raster",
@@ -69,7 +72,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 128,
+      "volatile": true
     },
     "sg-sacm5": {
       "type": "raster",
@@ -79,7 +83,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 128,
+      "volatile": true
     },
     "sg-symbols": {
       "type": "vector",
@@ -88,7 +93,8 @@
       ],
       "minzoom": 0,
       "maxzoom": 24,
-      "scheme": "xyz"
+      "scheme": "xyz",
+      "volatile": true
     },
     "sg-corridors": {
       "type": "raster",
@@ -98,7 +104,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 128,
+      "volatile": true
     },
     "sg-fallrisk": {
       "type": "raster",
@@ -108,7 +115,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128
+      "tileSize": 128,
+      "volatile": true
     },
     "photo-ign": {
       "type": "raster",
@@ -118,7 +126,8 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 256
+      "tileSize": 256,
+      "volatile": true
     },
     "sg-webcams": {
       "type": "geojson",
