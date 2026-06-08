@@ -2,7 +2,7 @@
   "version": 8,
   "name": "Topo",
   "metadata": {
-    "skitourenguru": {
+    "skitourenguru::groups": {
       "groups": [
         {
           "id": "routes",
@@ -42,7 +42,13 @@
     },
     "sg-bulletins": {
       "type": "geojson",
-      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Current_Bulletin_4326.json"
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Current_Bulletin_4326.json",
+      "metadata": {
+        "offline": {
+          "method": "try",
+          "critical": true
+        }
+      }
     },
     "sg-routes": {
       "type": "vector",
