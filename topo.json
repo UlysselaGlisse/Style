@@ -130,17 +130,6 @@
       "tileSize": 128,
       "volatile": true
     },
-    "photo-ign": {
-      "type": "raster",
-      "tiles": [
-        "https://data.geopf.fr/wmts?layer=ORTHOIMAGERY.ORTHOPHOTOS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix={z}&TileCol={x}&TileRow={y}"
-      ],
-      "minzoom": 0,
-      "maxzoom": 24,
-      "scheme": "xyz",
-      "tileSize": 256,
-      "volatile": true
-    },
     "sg-webcams": {
       "type": "geojson",
       "data": "https://alpinemeteo.com/data/stations/allstations_24h.geojson"
@@ -160,14 +149,6 @@
       }
     },
     {
-      "id": "photo",
-      "type": "raster",
-      "source": "photo-ign",
-      "layout": {
-        "visibility": "none"
-      }
-    },
-    {
       "id": "topo",
       "type": "raster",
       "source": "sg-topo",
@@ -176,7 +157,7 @@
       }
     },
     {
-      "id": "overlay-raster",
+      "id": "overlays",
       "type": "background",
       "layout": {
         "visibility": "none"
