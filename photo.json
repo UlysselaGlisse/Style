@@ -1,0 +1,573 @@
+{
+  "version": 8,
+  "name": "photo",
+  "metadata": {
+    "skitourenguru::offline": {
+      "sg-topo": {
+        "method": "expiration",
+        "critical": false
+      },
+      "sg-bulletins": {
+        "method": "network-first",
+        "critical": true
+      },
+      "sg-routes": {
+        "method": "force-refresh",
+        "critical": true
+      },
+      "sg-routes-risks": {
+        "method": "event",
+        "critical": true
+      }
+    },
+    "skitourenguru::groups": {
+      "groups": [
+        {
+          "id": "routes",
+          "layers": [
+            "routes",
+            "routes-risks-case",
+            "routes-risks"
+          ]
+        }
+      ]
+    },
+    "maputnik:renderer": "mlgljs"
+  },
+  "light": {},
+  "projection": {
+    "type": ""
+  },
+  "sources": {
+    "sg-topo": {
+      "type": "raster",
+      "tiles": [
+        "https://map.skitourenguru.com/AP_SG_TOPO_MINI_PRIVATE.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 128,
+      "volatile": true
+    },
+    "sg-bulletins": {
+      "type": "geojson",
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Current_Bulletin_4326.json"
+    },
+    "sg-routes": {
+      "type": "vector",
+      "tiles": [
+        "https://map.skitourenguru.com/Alps_RoutesPlusDerivats.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 15,
+      "scheme": "xyz",
+      "volatile": true
+    },
+    "sg-routes-risks": {
+      "type": "vector",
+      "tiles": [
+        "https://map.skitourenguru.com/Alps_Segments.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 15,
+      "scheme": "xyz",
+      "volatile": true
+    },
+    "sg-athm": {
+      "type": "raster",
+      "tiles": [
+        " https://map.skitourenguru.com/AP_SG_ATHM.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 128,
+      "volatile": true
+    },
+    "sg-sacm5": {
+      "type": "raster",
+      "tiles": [
+        " https://map.skitourenguru.com/AP_SG_SACM5.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 128,
+      "volatile": true
+    },
+    "sg-symbols": {
+      "type": "vector",
+      "tiles": [
+        "https://map.skitourenguru.com/Alps_Symbols.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "volatile": true
+    },
+    "sg-corridors": {
+      "type": "raster",
+      "tiles": [
+        " https://map.skitourenguru.com/AP_SG_CORRIDORS.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 128,
+      "volatile": true
+    },
+    "sg-fallrisk": {
+      "type": "raster",
+      "tiles": [
+        "https://map.skitourenguru.com/AP_SG_FDRISK.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 128,
+      "volatile": true
+    },
+    "photo-ign": {
+      "type": "raster",
+      "tiles": [
+        "https://data.geopf.fr/wmts?layer=ORTHOIMAGERY.ORTHOPHOTOS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix={z}&TileCol={x}&TileRow={y}"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "volatile": true
+    },
+    "sg-webcams": {
+      "type": "geojson",
+      "data": "https://alpinemeteo.com/data/stations/allstations_24h.geojson"
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "transition": {
+    "duration": 300
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    {
+      "id": "photo",
+      "type": "raster",
+      "source": "photo-ign",
+      "layout": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "id": "overlay-raster",
+      "type": "background",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "background-color": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "id": "overlay-slopes",
+      "type": "raster",
+      "source": "sg-sacm5",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "overlay-ATHM",
+      "type": "raster",
+      "source": "sg-athm",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "overlay-corridors",
+      "type": "raster",
+      "source": "sg-corridors",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "overlay-fallrisk",
+      "type": "raster",
+      "source": "sg-fallrisk",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "routes",
+      "type": "line",
+      "source": "sg-routes",
+      "source-layer": "Alps_Routes",
+      "minzoom": 11,
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(0, 0, 255, 1)",
+        "line-opacity": [
+          "interpolate",
+          [
+            "exponential",
+            8
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          11.05,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          11.5,
+          3,
+          14,
+          5
+        ]
+      }
+    },
+    {
+      "id": "routes-risks-cases",
+      "type": "line",
+      "source": "sg-routes-risks",
+      "source-layer": "Alps_Segments_3035",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "none",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          11.1,
+          3,
+          14,
+          6
+        ],
+        "line-opacity": 1,
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-gap-width": 0,
+        "line-blur": 1
+      }
+    },
+    {
+      "id": "routes-risks",
+      "type": "line",
+      "source": "sg-routes-risks",
+      "source-layer": "Alps_Segments_3035",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "line-cap": "round",
+        "visibility": "none",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "floor",
+            [
+              "to-number",
+              [
+                "get",
+                "segRisk"
+              ]
+            ]
+          ],
+          0,
+          "#33CC66",
+          1,
+          "#FF9933",
+          2,
+          "#E30613",
+          3,
+          "#E30613",
+          "#444444"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          11.1,
+          1,
+          14,
+          3
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "exponential",
+            8
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          11.05,
+          1
+        ]
+      }
+    },
+    {
+      "id": "avalanche-bulletins-coldperiode",
+      "type": "fill",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "in",
+        "dayper",
+        "DAY_PERIODE",
+        "COLD_PERIODE"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#ccff66",
+          2,
+          "#ffff00",
+          3,
+          "#ff9900",
+          4,
+          "#ff0000",
+          5,
+          "#ff0000",
+          "#cccccc"
+        ],
+        "fill-antialias": false,
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          5.05,
+          0.5,
+          9.5,
+          0.5,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "id": "avalanche-bulletins-hotperiode",
+      "type": "fill",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "==",
+        "dayper",
+        "HOT_PERIODE"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#ccff66",
+          2,
+          "#ffff00",
+          3,
+          "#ff9900",
+          4,
+          "#ff0000",
+          5,
+          "#ff0000",
+          "#cccccc"
+        ],
+        "fill-antialias": false,
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          5.05,
+          0.4,
+          9.5,
+          0.4,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "id": "avalanche-bulletins-outline",
+      "type": "line",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "all",
+        [
+          "in",
+          "dayper",
+          "DAY_PERIODE",
+          "COLD_PERIODE"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-opacity": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          6,
+          0.4,
+          10,
+          0
+        ],
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "webcams",
+      "type": "circle",
+      "source": "sg-webcams"
+    }
+  ],
+  "id": "2s9ycmy",
+  "owner": "Ulysse Descamps"
+}
