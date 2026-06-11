@@ -24,11 +24,7 @@
       "groups": [
         {
           "id": "routes",
-          "layers": [
-            "routes",
-            "routes-risks-case",
-            "routes-risks"
-          ]
+          "layers": ["routes", "routes-risks-case", "routes-risks"]
         }
       ]
     },
@@ -39,17 +35,6 @@
     "type": ""
   },
   "sources": {
-    "sg-topo": {
-      "type": "raster",
-      "tiles": [
-        "https://map.skitourenguru.com/AP_SG_TOPO_MINI_PRIVATE.tms?x={x}&y={y}&z={z}"
-      ],
-      "minzoom": 0,
-      "maxzoom": 24,
-      "scheme": "xyz",
-      "tileSize": 128,
-      "volatile": true
-    },
     "sg-bulletins": {
       "type": "geojson",
       "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Current_Bulletin_4326.json"
@@ -136,7 +121,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 256,
+      "tileSize": 128,
       "volatile": true
     },
     "sg-webcams": {
@@ -186,14 +171,8 @@
       "paint": {
         "raster-opacity": {
           "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              0.4
-            ]
+            [13, 0],
+            [13.5, 0.4]
           ]
         }
       }
@@ -209,14 +188,8 @@
       "paint": {
         "raster-opacity": {
           "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              0.4
-            ]
+            [13, 0],
+            [13.5, 0.4]
           ]
         }
       }
@@ -232,14 +205,8 @@
       "paint": {
         "raster-opacity": {
           "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              0.4
-            ]
+            [13, 0],
+            [13.5, 0.4]
           ]
         }
       }
@@ -255,14 +222,8 @@
       "paint": {
         "raster-opacity": {
           "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              0.4
-            ]
+            [13, 0],
+            [13.5, 0.4]
           ]
         }
       }
@@ -281,13 +242,8 @@
         "line-color": "rgba(0, 0, 255, 1)",
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            8
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 8],
+          ["zoom"],
           11,
           0,
           11.05,
@@ -295,13 +251,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           11.5,
@@ -326,13 +277,8 @@
       "paint": {
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           11.1,
@@ -353,9 +299,7 @@
       "source-layer": "Alps_Segments_3035",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
+      "filter": ["all"],
       "layout": {
         "line-cap": "round",
         "visibility": "none",
@@ -364,16 +308,7 @@
       "paint": {
         "line-color": [
           "match",
-          [
-            "floor",
-            [
-              "to-number",
-              [
-                "get",
-                "segRisk"
-              ]
-            ]
-          ],
+          ["floor", ["to-number", ["get", "segRisk"]]],
           0,
           "#33CC66",
           1,
@@ -386,13 +321,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0,
           11.1,
@@ -402,13 +332,8 @@
         ],
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            8
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 8],
+          ["zoom"],
           11,
           0,
           11.05,
@@ -422,22 +347,14 @@
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
-      "filter": [
-        "in",
-        "dayper",
-        "DAY_PERIODE",
-        "COLD_PERIODE"
-      ],
+      "filter": ["in", "dayper", "DAY_PERIODE", "COLD_PERIODE"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": [
           "match",
-          [
-            "get",
-            "rdlin"
-          ],
+          ["get", "rdlin"],
           1,
           "#ccff66",
           2,
@@ -453,12 +370,8 @@
         "fill-antialias": false,
         "fill-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           5,
           0,
           5.05,
@@ -476,21 +389,14 @@
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
-      "filter": [
-        "==",
-        "dayper",
-        "HOT_PERIODE"
-      ],
+      "filter": ["==", "dayper", "HOT_PERIODE"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": [
           "match",
-          [
-            "get",
-            "rdlin"
-          ],
+          ["get", "rdlin"],
           1,
           "#ccff66",
           2,
@@ -506,12 +412,8 @@
         "fill-antialias": false,
         "fill-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           5,
           0,
           5.05,
@@ -529,28 +431,15 @@
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
-      "filter": [
-        "all",
-        [
-          "in",
-          "dayper",
-          "DAY_PERIODE",
-          "COLD_PERIODE"
-        ]
-      ],
+      "filter": ["all", ["in", "dayper", "DAY_PERIODE", "COLD_PERIODE"]],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-opacity": [
           "interpolate",
-          [
-            "exponential",
-            1.5
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.5],
+          ["zoom"],
           5,
           0,
           6,
