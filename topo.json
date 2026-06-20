@@ -2,22 +2,18 @@
   "version": 8,
   "name": "Topo",
   "metadata": {
-    "skitourenguru::offline": {
+    "offline": {
       "sg-topo": {
-        "method": "expiration",
-        "critical": false
+        "cache-policy": "stale-while-revalidate",
+        "stale-if-error": true
       },
       "sg-bulletins": {
-        "method": "network-first",
-        "critical": true
+        "cache-policy": "network-first",
+        "stale-if-error": false
       },
       "sg-routes": {
-        "method": "force-refresh",
-        "critical": true
-      },
-      "sg-routes-risks": {
-        "method": "event",
-        "critical": true
+        "cache-policy": "stale-while-revalidate",
+        "stale-if-error": true
       }
     },
     "skitourenguru::groups": {

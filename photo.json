@@ -3,20 +3,12 @@
   "name": "photo",
   "metadata": {
     "skitourenguru::offline": {
-      "sg-topo": {
-        "method": "expiration",
-        "critical": false
-      },
       "sg-bulletins": {
         "method": "network-first",
         "critical": true
       },
       "sg-routes": {
-        "method": "force-refresh",
-        "critical": true
-      },
-      "sg-routes-risks": {
-        "method": "event",
+        "method": "expiration",
         "critical": true
       }
     },
