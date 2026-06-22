@@ -83,7 +83,7 @@
     "sg-athm": {
       "type": "raster",
       "tiles": [
-        " https://map.skitourenguru.com/AP_SG_ATHM.tms?x={x}&y={y}&z={z}"
+        "https://map.skitourenguru.com/AP_SG_ATHM.tms?x={x}&y={y}&z={z}"
       ],
       "minzoom": 0,
       "maxzoom": 24,
@@ -94,7 +94,7 @@
     "sg-sacm5": {
       "type": "raster",
       "tiles": [
-        " https://map.skitourenguru.com/AP_SG_SACM5.tms?x={x}&y={y}&z={z}"
+        "https://map.skitourenguru.com/AP_SG_SACM5.tms?x={x}&y={y}&z={z}"
       ],
       "minzoom": 0,
       "maxzoom": 24,
