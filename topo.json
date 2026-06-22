@@ -356,7 +356,7 @@
       ],
       "layout": {
         "line-cap": "round",
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "bevel"
       },
       "paint": {
