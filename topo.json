@@ -176,7 +176,7 @@
       "source": "sg-sacm5",
       "minzoom": 13,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -199,7 +199,7 @@
       "source": "sg-athm",
       "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
