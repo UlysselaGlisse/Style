@@ -18,6 +18,10 @@
       "sg-webcams": {
         "cache-policy": "stale-while-revalidate",
         "stale-if-error": false
+      },
+      "sg-sacm5": {
+        "cache-policy": "stale-while-revalidate",
+        "stale-if-error": true
       }
     },
     "skitourenguru::groups": {
