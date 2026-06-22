@@ -115,7 +115,7 @@
     "sg-corridors": {
       "type": "raster",
       "tiles": [
-        " https://map.skitourenguru.com/AP_SG_CORRIDORS.tms?x={x}&y={y}&z={z}"
+        "https://map.skitourenguru.com/AP_SG_CORRIDORS.tms?x={x}&y={y}&z={z}"
       ],
       "minzoom": 0,
       "maxzoom": 24,
