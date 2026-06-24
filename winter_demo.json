@@ -425,6 +425,9 @@
     {
       "id": "avalanche-bulletins-coldperiode",
       "type": "fill",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
@@ -479,6 +482,9 @@
     {
       "id": "avalanche-bulletins-hotperiode",
       "type": "fill",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
@@ -532,6 +538,9 @@
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
