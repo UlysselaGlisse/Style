@@ -4,23 +4,31 @@
   "metadata": {
     "offline": {
       "sg-topo": {
-        "cache-policy": "stale-while-revalidate",
+        "cache-policy": "cache-first",
         "stale-if-error": true
       },
       "sg-bulletins": {
-        "cache-policy": "network-first",
+        "cache-policy": "cache-first",
         "stale-if-error": false
       },
       "sg-routes": {
-        "cache-policy": "stale-while-revalidate",
+        "cache-policy": "cache-first",
         "stale-if-error": true
       },
       "sg-webcams": {
-        "cache-policy": "stale-while-revalidate",
+        "cache-policy": "cache-first",
         "stale-if-error": false
       },
       "sg-sacm5": {
-        "cache-policy": "stale-while-revalidate",
+        "cache-policy": "cache-first",
+        "stale-if-error": true
+      },
+      "sg-athm": {
+        "cache-policy": "cache-first",
+        "stale-if-error": true
+      },
+      "sg-fallrisk": {
+        "cache-policy": "cache-first",
         "stale-if-error": true
       }
     },
@@ -176,7 +184,7 @@
       "source": "sg-sacm5",
       "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -245,7 +253,7 @@
       "source": "sg-fallrisk",
       "minzoom": 13,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
