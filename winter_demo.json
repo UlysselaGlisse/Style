@@ -66,7 +66,7 @@
     },
     "sg-bulletins": {
       "type": "geojson",
-      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Current_Bulletin_4326.json"
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Bulletins_2025.04.16_EV_4326.json"
     },
     "sg-routes": {
       "type": "vector",
@@ -488,7 +488,7 @@
         "HOT_PERIODE"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
