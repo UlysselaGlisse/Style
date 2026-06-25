@@ -594,7 +594,10 @@
       "metadata": {
         "clickable": true
       },
-      "source": "sg-webcams"
+      "source": "sg-webcams",
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "accidents",
@@ -602,7 +605,10 @@
       "metadata": {
         "clickable": true
       },
-      "source": "sg-accidents"
+      "source": "sg-accidents",
+      "layout": {
+        "visibility": "none"
+      }
     },
     {
       "id": "huts",
@@ -610,7 +616,10 @@
       "metadata": {
         "clickable": true
       },
-      "source": "sg-huts"
+      "source": "sg-huts",
+      "layout": {
+        "visibility": "none"
+      }
     }
   ],
   "id": "2s9ycmy",
