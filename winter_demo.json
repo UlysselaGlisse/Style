@@ -273,6 +273,9 @@
     {
       "id": "routes",
       "type": "line",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-routes",
       "source-layer": "Alps_Routes",
       "minzoom": 11,
@@ -355,6 +358,9 @@
     {
       "id": "routes-risks",
       "type": "line",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-routes-risks",
       "source-layer": "Alps_Segments_3035",
       "minzoom": 11,
@@ -538,9 +544,6 @@
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
-      "metadata": {
-        "clickable": true
-      },
       "source": "sg-bulletins",
       "minzoom": 5,
       "maxzoom": 14,
