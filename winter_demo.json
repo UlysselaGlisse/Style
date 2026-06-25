@@ -144,7 +144,15 @@
     },
     "sg-webcams": {
       "type": "geojson",
-      "data": "https://alpinemeteo.com/data/stations/allstations_24h.geojson"
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Webcams_4326.json"
+    },
+    "sg-accidents": {
+      "type": "geojson",
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Accidents_4326.json"
+    },
+    "sg-huts": {
+      "type": "geojson",
+      "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Huts_4326.json"
     }
   },
   "sprite": "",
@@ -584,6 +592,16 @@
       "id": "webcams",
       "type": "circle",
       "source": "sg-webcams"
+    },
+    {
+      "id": "accidents",
+      "type": "circle",
+      "source": "sg-accidents"
+    },
+    {
+      "id": "huts",
+      "type": "circle",
+      "source": "sg-huts"
     }
   ],
   "id": "2s9ycmy",
