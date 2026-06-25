@@ -591,16 +591,25 @@
     {
       "id": "webcams",
       "type": "circle",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-webcams"
     },
     {
       "id": "accidents",
       "type": "circle",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-accidents"
     },
     {
       "id": "huts",
       "type": "circle",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-huts"
     }
   ],
