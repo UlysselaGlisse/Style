@@ -600,6 +600,9 @@
     {
       "id": "poi-accident",
       "type": "symbol",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-poi",
       "source-layer": "Alps_Accidents",
       "layout": {
@@ -626,6 +629,9 @@
     {
       "id": "poi-hut",
       "type": "symbol",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-poi",
       "source-layer": "Alps_Huts",
       "layout": {
@@ -637,6 +643,9 @@
     {
       "id": "poi-webcam",
       "type": "symbol",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-poi",
       "source-layer": "WebCams_Huts",
       "minzoom": 12,
