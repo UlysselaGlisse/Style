@@ -153,6 +153,15 @@
     "sg-huts": {
       "type": "geojson",
       "data": "https://www.skitourenguru.com/calc_data2/json/Alps_Huts_4326.json"
+    },
+    "sg-poi": {
+      "type": "vector",
+      "tiles": [
+        "https://map.skitourenguru.com/Alps_Pois.tms?x={x}&y={y}&z={z}"
+      ],
+      "minzoom": 8,
+      "maxzoom": 14,
+      "scheme": "xyz"
     }
   },
   "sprite": "",
@@ -589,36 +598,39 @@
       }
     },
     {
-      "id": "webcams",
+      "id": "poi-webcams",
       "type": "circle",
       "metadata": {
         "clickable": true
       },
-      "source": "sg-webcams",
+      "source": "sg-poi",
+      "source-layer": "WebCams_Huts",
       "minzoom": 12,
       "layout": {
         "visibility": "visible"
       }
     },
     {
-      "id": "accidents",
+      "id": "poi-accidents",
       "type": "circle",
       "metadata": {
         "clickable": true
       },
-      "source": "sg-accidents",
+      "source": "sg-poi",
+      "source-layer": "Alps_Accidents",
       "minzoom": 12,
       "layout": {
         "visibility": "visible"
       }
     },
     {
-      "id": "huts",
+      "id": "poi-huts",
       "type": "circle",
       "metadata": {
         "clickable": true
       },
-      "source": "sg-huts",
+      "source": "sg-poi",
+      "source-layer": "Alps_Huts",
       "minzoom": 12,
       "layout": {
         "visibility": "visible"
