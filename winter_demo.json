@@ -605,8 +605,9 @@
       },
       "source": "sg-poi",
       "source-layer": "Alps_Accidents",
+      "minzoom": 13,
       "layout": {
-        "icon-size": 0.06,
+        "icon-size": 0.07,
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "visibility": "visible",
@@ -634,10 +635,11 @@
       },
       "source": "sg-poi",
       "source-layer": "Alps_Huts",
+      "minzoom": 13,
       "layout": {
         "icon-image": "hut",
         "visibility": "visible",
-        "icon-size": 0.07
+        "icon-size": 0.09
       }
     },
     {
@@ -648,7 +650,7 @@
       },
       "source": "sg-poi",
       "source-layer": "WebCams_Huts",
-      "minzoom": 12,
+      "minzoom": 13,
       "layout": {
         "icon-image": "webcam",
         "icon-size": 0.05
