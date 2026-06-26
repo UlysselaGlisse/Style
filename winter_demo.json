@@ -164,7 +164,7 @@
       "scheme": "xyz"
     }
   },
-  "sprite": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/sprites/sprites",
+  "sprite": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/sprites/skitourenguru",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "transition": {
     "duration": 300
