@@ -639,7 +639,19 @@
       "layout": {
         "icon-image": "hut",
         "visibility": "visible",
-        "icon-size": 0.09
+        "icon-size": 0.09,
+        "icon-allow-overlap": false,
+        "icon-overlap": "never",
+        "icon-ignore-placement": false,
+        "icon-optional": false,
+        "text-field": "{name}",
+        "text-anchor": "left",
+        "text-radial-offset": 1,
+        "text-size": 12,
+        "text-font": [
+          "Open Sans Cond Light",
+          "Arial Unicode MS Regular"
+        ]
       }
     },
     {
