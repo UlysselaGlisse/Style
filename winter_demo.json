@@ -642,11 +642,24 @@
       "source": "sg-poi",
       "source-layer": "Alps_Accidents",
       "layout": {
-        "icon-image": "Risk0",
-        "icon-size": 0.1,
+        "icon-size": 0.06,
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
-        "visibility": "visible"
+        "visibility": "visible",
+        "icon-image": "Accident",
+        "icon-rotation-alignment": "viewport",
+        "icon-rotate": {
+          "stops": [
+            [
+              6,
+              0
+            ],
+            [
+              10,
+              0
+            ]
+          ]
+        }
       }
     }
   ],
