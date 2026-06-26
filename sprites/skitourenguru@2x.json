@@ -1,23 +1,30 @@
 {
-  "Risk0": {
-    "height": 430,
-    "pixelRatio": 1,
-    "width": 480,
+  "Accident": {
+    "height": 860,
+    "pixelRatio": 2,
+    "width": 960,
     "x": 0,
+    "y": 0
+  },
+  "Risk0": {
+    "height": 860,
+    "pixelRatio": 2,
+    "width": 960,
+    "x": 960,
     "y": 0
   },
   "Risk1": {
-    "height": 430,
-    "pixelRatio": 1,
-    "width": 480,
-    "x": 480,
-    "y": 0
+    "height": 860,
+    "pixelRatio": 2,
+    "width": 960,
+    "x": 0,
+    "y": 860
   },
   "Risk2": {
-    "height": 360,
-    "pixelRatio": 1,
-    "width": 380,
-    "x": 0,
-    "y": 430
+    "height": 720,
+    "pixelRatio": 2,
+    "width": 760,
+    "x": 960,
+    "y": 860
   }
 }

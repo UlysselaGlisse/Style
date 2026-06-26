@@ -643,7 +643,7 @@
       "source-layer": "Alps_Accidents",
       "layout": {
         "icon-image": "Risk0",
-        "icon-size": 0.01,
+        "icon-size": 0.1,
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "visibility": "visible"
