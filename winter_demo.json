@@ -50,7 +50,7 @@
     "color": "rgba(255, 219, 0, 1)"
   },
   "projection": {
-    "type": ""
+    "type": "mercator"
   },
   "sources": {
     "sg-topo": {
@@ -164,7 +164,7 @@
       "scheme": "xyz"
     }
   },
-  "sprite": "",
+  "sprite": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/sprites",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "transition": {
     "duration": 300
