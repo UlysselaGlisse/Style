@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Topo",
+  "name": "Winter Demo",
   "metadata": {
     "offline": {
       "sg-topo": {
@@ -444,7 +444,7 @@
       },
       "source": "sg-bulletins",
       "minzoom": 5,
-      "maxzoom": 14,
+      "maxzoom": 10,
       "filter": [
         "in",
         "dayper",
@@ -501,7 +501,7 @@
       },
       "source": "sg-bulletins",
       "minzoom": 5,
-      "maxzoom": 14,
+      "maxzoom": 10,
       "filter": [
         "==",
         "dayper",
@@ -554,7 +554,7 @@
       "type": "line",
       "source": "sg-bulletins",
       "minzoom": 5,
-      "maxzoom": 14,
+      "maxzoom": 10,
       "filter": [
         "all",
         [
