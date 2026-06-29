@@ -11,7 +11,7 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   sodipodi:docname="dot-rd1.svg"
+   sodipodi:docname="dot-losange-rd1.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      showborder="false"
      inkscape:zoom="9.9887356"
-     inkscape:cx="10.862236"
+     inkscape:cx="10.962348"
      inkscape:cy="18.721088"
      inkscape:window-width="1512"
      inkscape:window-height="921"
@@ -361,7 +361,7 @@
      cy="4.1440959"
      inkscape:label="path5"
      inkscape:highlight-color="#f55f5f"
-     transform="matrix(0.72306149,-0.00512203,-0.00536667,0.72333287,1.1756388,-3.0480245)"
+     transform="matrix(0.54230608,-0.00384138,-0.00402508,0.54247978,1.9400568,-2.2859346)"
      r="3.2921834"
      clip-path="url(#clipPath4)" />
   <circle
@@ -371,7 +371,7 @@
      cy="4.1440959"
      inkscape:label="path5"
      inkscape:highlight-color="#f55f5f"
-     transform="matrix(0.72306149,-0.00512203,-0.00536667,0.72333287,5.4089722,1.1853089)"
+     transform="matrix(0.54229632,-0.00384145,-0.004025,0.54248971,6.1733949,1.947357)"
      r="3.2921834"
      clip-path="url(#clipPath3)" />
   <circle
@@ -381,7 +381,7 @@
      cy="4.1440959"
      inkscape:label="path5"
      inkscape:highlight-color="#f55f5f"
-     transform="matrix(0.72306149,-0.00512203,-0.00536667,0.72333287,1.1756388,5.4186422)"
+     transform="matrix(0.54230608,-0.00384152,-0.00402508,0.5424997,1.9400202,6.1806479)"
      r="3.2921834"
      clip-path="url(#clipPath2)" />
   <circle
@@ -391,7 +391,7 @@
      cy="4.1440959"
      inkscape:label="path5"
      inkscape:highlight-color="#f55f5f"
-     transform="matrix(0.72306149,-0.00512203,-0.00536667,0.72333287,-3.0576945,1.1853089)"
+     transform="matrix(0.54231606,-0.00384145,-0.00402515,0.54248971,-2.2933552,1.9473205)"
      r="3.2921834"
      clip-path="url(#clipPath1)" />
 </svg>
