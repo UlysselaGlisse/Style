@@ -182,7 +182,7 @@
       "type": "raster",
       "source": "sg-topo",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": 1
@@ -464,7 +464,7 @@
         "COLD_PERIODE"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -525,7 +525,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-opacity": 0.7,
+        "fill-opacity": 0.8,
         "fill-pattern": [
           "match",
           [
@@ -562,7 +562,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-opacity": [
@@ -619,7 +619,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-opacity": [
