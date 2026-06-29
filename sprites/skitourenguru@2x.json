@@ -14,38 +14,38 @@
     "y": 860
   },
   "dot-rd1": {
-    "height": 128,
+    "height": 64,
     "pixelRatio": 2,
-    "width": 128,
-    "x": 1128,
+    "width": 64,
+    "x": 1512,
     "y": 860
   },
   "dot-rd2": {
     "height": 128,
     "pixelRatio": 2,
     "width": 128,
-    "x": 1256,
+    "x": 1128,
     "y": 860
   },
   "dot-rd3": {
-    "height": 128,
+    "height": 64,
     "pixelRatio": 2,
-    "width": 128,
-    "x": 1384,
-    "y": 860
+    "width": 64,
+    "x": 1512,
+    "y": 924
   },
   "dot-rd4": {
     "height": 128,
     "pixelRatio": 2,
     "width": 128,
-    "x": 1512,
+    "x": 1256,
     "y": 860
   },
   "dot-rd5": {
     "height": 128,
     "pixelRatio": 2,
     "width": 128,
-    "x": 1640,
+    "x": 1384,
     "y": 860
   },
   "hut": {
