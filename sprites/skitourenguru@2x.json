@@ -13,12 +13,19 @@
     "x": 1000,
     "y": 860
   },
-  "dot-rd1": {
+  "dot-losange-rd1": {
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
     "x": 1512,
     "y": 860
+  },
+  "dot-rd1": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 1512,
+    "y": 924
   },
   "dot-rd2": {
     "height": 128,
@@ -31,8 +38,8 @@
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
-    "x": 1512,
-    "y": 924
+    "x": 1576,
+    "y": 860
   },
   "dot-rd4": {
     "height": 128,

@@ -525,7 +525,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-opacity": 0.5,
+        "fill-opacity": 0.7,
         "fill-pattern": [
           "match",
           [
@@ -537,7 +537,7 @@
           2,
           "dot-rd2",
           3,
-          "dot-rd1",
+          "dot-rd3",
           4,
           "dot-rd4",
           5,
@@ -545,6 +545,63 @@
           "dot"
         ],
         "fill-outline-color": "rgba(255, 255, 255, 0)"
+      }
+    },
+    {
+      "id": "avalanche-bulletins-outline-copy",
+      "type": "line",
+      "source": "sg-bulletins",
+      "minzoom": 5,
+      "maxzoom": 10,
+      "filter": [
+        "all",
+        [
+          "in",
+          "dayper",
+          "DAY_PERIODE"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0,
+          5.05,
+          0.8,
+          9.8,
+          0.8,
+          10,
+          0
+        ],
+        "line-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#92BF36",
+          2,
+          "#A3A300",
+          3,
+          "#D48002",
+          4,
+          "#D60202",
+          5,
+          "#000000",
+          "#cccccc"
+        ],
+        "line-width": 3,
+        "line-blur": 3
       }
     },
     {
@@ -558,8 +615,7 @@
         [
           "in",
           "dayper",
-          "DAY_PERIODE",
-          "COLD_PERIODE"
+          "HOT_PERIODE"
         ]
       ],
       "layout": {
@@ -615,24 +671,29 @@
       "source-layer": "Alps_Accidents",
       "minzoom": 13,
       "layout": {
-        "icon-size": 0.07,
+        "icon-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          0.05,
+          16,
+          0.09
+        ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
         "visibility": "visible",
-        "icon-rotation-alignment": "viewport",
-        "icon-rotate": {
-          "stops": [
-            [
-              6,
-              0
-            ],
-            [
-              10,
-              0
-            ]
-          ]
-        },
+        "icon-rotation-alignment": "map",
         "icon-image": "accident"
+      },
+      "paint": {
+        "icon-halo-color": "rgba(0, 0, 0, 0)",
+        "icon-color": "rgba(0, 0, 0, 0)",
+        "icon-translate-anchor": "map"
       }
     },
     {
