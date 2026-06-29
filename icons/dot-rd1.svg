@@ -33,7 +33,7 @@
      inkscape:window-width="1512"
      inkscape:window-height="921"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="33"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg1"
      inkscape:clip-to-page="false" />
@@ -42,44 +42,44 @@
     <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
-       id="filter118"
-       x="-0.07289995"
-       y="-0.07289995"
-       width="1.1609874"
-       height="1.1609874">
+       id="filter43"
+       x="-0.036449975"
+       y="-0.036449975"
+       width="1.1032749"
+       height="1.1032749">
       <feFlood
          result="flood"
          in="SourceGraphic"
-         flood-opacity="1.000000"
+         flood-opacity="0.243137"
          flood-color="rgb(0,0,0)"
-         id="feFlood117" />
+         id="feFlood42" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
-         stdDeviation="0.200000"
-         id="feGaussianBlur117" />
+         stdDeviation="0.100000"
+         id="feGaussianBlur42" />
       <feOffset
          result="offset"
          in="blur"
-         dx="0.100000"
-         dy="0.100000"
-         id="feOffset117" />
+         dx="0.200000"
+         dy="0.200000"
+         id="feOffset42" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite117" />
+         id="feComposite42" />
       <feComposite
          result="comp2"
          operator="over"
          in="SourceGraphic"
          in2="comp1"
-         id="feComposite118" />
+         id="feComposite43" />
     </filter>
   </defs>
   <circle
-     style="mix-blend-mode:normal;fill:#b8e093;fill-opacity:1;stroke:none;stroke-width:0.55307;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter118)"
+     style="mix-blend-mode:normal;fill:#b8e093;fill-opacity:1;stroke:none;stroke-width:0.55307;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter43)"
      id="path5"
      cx="4.1602497"
      cy="4.1440959"
