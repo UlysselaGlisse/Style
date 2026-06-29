@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="33.779263mm"
+   height="33.845325mm"
+   viewBox="0 0 33.779263 33.845325"
    version="1.1"
    id="svg1"
    inkscape:export-filename="dot.svg"
@@ -27,24 +27,25 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showborder="false"
-     inkscape:zoom="11.859035"
-     inkscape:cx="400.20121"
-     inkscape:cy="551.14098"
+     inkscape:zoom="0.74118969"
+     inkscape:cx="62.062385"
+     inkscape:cy="94.44276"
      inkscape:window-width="1512"
      inkscape:window-height="921"
      inkscape:window-x="0"
      inkscape:window-y="33"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="svg1"
+     inkscape:clip-to-page="false" />
   <defs
      id="defs1" />
   <ellipse
-     style="fill:#fdff2a;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.553068;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      id="path5"
-     cx="106.53357"
-     cy="145.10878"
-     rx="3.0569999"
-     ry="3.0565655"
+     cx="16.889631"
+     cy="16.922663"
+     rx="16.889631"
+     ry="16.922663"
      inkscape:label="path5"
      inkscape:highlight-color="#f55f5f" />
 </svg>

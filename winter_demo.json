@@ -461,7 +461,7 @@
         "COLD_PERIODE"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": [
@@ -520,42 +520,10 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": [
-          "match",
-          [
-            "get",
-            "rdlin"
-          ],
-          1,
-          "#ccff66",
-          2,
-          "#ffff00",
-          3,
-          "#ff9900",
-          4,
-          "#ff0000",
-          5,
-          "#ff0000",
-          "#cccccc"
-        ],
-        "fill-antialias": false,
-        "fill-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0,
-          5.05,
-          0.4,
-          9.5,
-          0.4,
-          10,
-          0
-        ]
+        "fill-color": "#000000",
+        "fill-antialias": true,
+        "fill-opacity": 0.8,
+        "fill-pattern": "risk2"
       }
     },
     {
@@ -574,7 +542,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-opacity": [

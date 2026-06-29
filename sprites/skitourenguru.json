@@ -3,56 +3,56 @@
     "height": 430,
     "pixelRatio": 1,
     "width": 480,
-    "x": 500,
-    "y": 1123
+    "x": 0,
+    "y": 500
   },
   "dot": {
-    "height": 1123,
+    "height": 128,
     "pixelRatio": 1,
-    "width": 794,
-    "x": 0,
-    "y": 0
+    "width": 128,
+    "x": 980,
+    "y": 280
   },
   "hut": {
     "height": 297,
     "pixelRatio": 1,
     "width": 210,
-    "x": 794,
-    "y": 710
+    "x": 1340,
+    "y": 280
   },
   "risk0": {
     "height": 430,
     "pixelRatio": 1,
     "width": 480,
-    "x": 500,
-    "y": 1553
+    "x": 480,
+    "y": 500
   },
   "risk1": {
     "height": 430,
     "pixelRatio": 1,
     "width": 480,
-    "x": 794,
+    "x": 500,
     "y": 0
   },
   "risk2": {
     "height": 360,
     "pixelRatio": 1,
     "width": 380,
-    "x": 0,
-    "y": 1623
+    "x": 960,
+    "y": 430
   },
   "weather-station": {
     "height": 500,
     "pixelRatio": 1,
     "width": 500,
     "x": 0,
-    "y": 1123
+    "y": 0
   },
   "webcam": {
     "height": 280,
     "pixelRatio": 1,
     "width": 400,
-    "x": 794,
-    "y": 430
+    "x": 980,
+    "y": 0
   }
 }
