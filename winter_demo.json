@@ -164,16 +164,7 @@
       "scheme": "xyz"
     }
   },
-  "sprite": [
-    {
-      "id": "skitourenguru-sprites",
-      "url": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/sprites/skitourenguru"
-    },
-    {
-      "id": "textures",
-      "url": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/texture/cartes"
-    }
-  ],
+  "sprite": "https://raw.githubusercontent.com/UlysselaGlisse/Style/refs/heads/main/sprites/skitourenguru",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "transition": {
     "duration": 300
@@ -531,25 +522,8 @@
       "paint": {
         "fill-antialias": true,
         "fill-opacity": 0.8,
-        "fill-pattern": "textures:dot",
-        "fill-color": [
-          "match",
-          [
-            "get",
-            "rdlin"
-          ],
-          1,
-          "#ccff66",
-          2,
-          "#ffff00",
-          3,
-          "#ff9900",
-          4,
-          "#ff0000",
-          5,
-          "#ff0000",
-          "#cccccc"
-        ]
+        "fill-pattern": "dot",
+        "fill-color": "rgba(245, 0, 0, 1)"
       }
     },
     {
@@ -618,7 +592,7 @@
             ]
           ]
         },
-        "icon-image": "skitourenguru:accidents"
+        "icon-image": "accident"
       }
     },
     {
