@@ -183,6 +183,9 @@
       "source": "sg-topo",
       "layout": {
         "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
       }
     },
     {
@@ -479,7 +482,7 @@
           4,
           "#ff0000",
           5,
-          "#ff0000",
+          "#940101",
           "#cccccc"
         ],
         "fill-antialias": true,
@@ -495,11 +498,12 @@
           0,
           5.05,
           0.5,
-          9.5,
+          9.8,
           0.5,
           10,
           0
-        ]
+        ],
+        "fill-outline-color": "rgba(0, 0, 0, 0)"
       }
     },
     {
@@ -521,7 +525,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-opacity": 0.8,
+        "fill-opacity": 0.5,
         "fill-pattern": [
           "match",
           [
@@ -539,7 +543,8 @@
           5,
           "dot-rd5",
           "dot"
-        ]
+        ],
+        "fill-outline-color": "rgba(255, 255, 255, 0)"
       }
     },
     {
@@ -558,27 +563,46 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-opacity": [
           "interpolate",
           [
-            "exponential",
-            1.5
+            "linear"
           ],
           [
             "zoom"
           ],
           5,
           0,
-          6,
-          0.4,
+          5.05,
+          0.8,
+          9.8,
+          0.8,
           10,
           0
         ],
-        "line-color": "rgba(0, 0, 0, 1)",
-        "line-width": 2
+        "line-color": [
+          "match",
+          [
+            "get",
+            "rdlin"
+          ],
+          1,
+          "#92BF36",
+          2,
+          "#A3A300",
+          3,
+          "#D48002",
+          4,
+          "#D60202",
+          5,
+          "#000000",
+          "#cccccc"
+        ],
+        "line-width": 3,
+        "line-blur": 3
       }
     },
     {
