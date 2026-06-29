@@ -1,58 +1,66 @@
 {
   "accident": {
-    "height": 430,
+    "height": 436,
     "pixelRatio": 1,
-    "width": 480,
+    "width": 486,
     "x": 0,
-    "y": 500
+    "y": 506,
+    "sdf": true
   },
   "dot": {
-    "height": 64,
+    "height": 70,
     "pixelRatio": 1,
-    "width": 64,
-    "x": 500,
-    "y": 430
+    "width": 70,
+    "x": 506,
+    "y": 436,
+    "sdf": true
   },
   "hut": {
-    "height": 297,
+    "height": 303,
     "pixelRatio": 1,
-    "width": 210,
-    "x": 1340,
-    "y": 280
+    "width": 216,
+    "x": 1358,
+    "y": 286,
+    "sdf": true
   },
   "risk0": {
-    "height": 430,
+    "height": 436,
     "pixelRatio": 1,
-    "width": 480,
-    "x": 480,
-    "y": 500
+    "width": 486,
+    "x": 486,
+    "y": 506,
+    "sdf": true
   },
   "risk1": {
-    "height": 430,
+    "height": 436,
     "pixelRatio": 1,
-    "width": 480,
-    "x": 500,
-    "y": 0
+    "width": 486,
+    "x": 506,
+    "y": 0,
+    "sdf": true
   },
   "risk2": {
-    "height": 360,
+    "height": 366,
     "pixelRatio": 1,
-    "width": 380,
-    "x": 960,
-    "y": 430
+    "width": 386,
+    "x": 972,
+    "y": 436,
+    "sdf": true
   },
   "weather-station": {
-    "height": 500,
+    "height": 506,
     "pixelRatio": 1,
-    "width": 500,
+    "width": 506,
     "x": 0,
-    "y": 0
+    "y": 0,
+    "sdf": true
   },
   "webcam": {
-    "height": 280,
+    "height": 286,
     "pixelRatio": 1,
-    "width": 400,
-    "x": 980,
-    "y": 0
+    "width": 406,
+    "x": 992,
+    "y": 0,
+    "sdf": true
   }
 }
