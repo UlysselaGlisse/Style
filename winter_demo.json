@@ -482,7 +482,7 @@
           "#ff0000",
           "#cccccc"
         ],
-        "fill-antialias": false,
+        "fill-antialias": true,
         "fill-opacity": [
           "interpolate",
           [
