@@ -522,8 +522,8 @@
       "paint": {
         "fill-antialias": true,
         "fill-opacity": 0.8,
-        "fill-pattern": "dot",
-        "fill-color": "rgba(245, 0, 0, 1)"
+        "fill-pattern": "hut",
+        "fill-color": "rgba(255, 255, 255, 1)"
       }
     },
     {
@@ -620,6 +620,13 @@
           "Open Sans Cond Light",
           "Arial Unicode MS Regular"
         ]
+      },
+      "paint": {
+        "icon-color": "rgba(255, 255, 255, 1)",
+        "icon-halo-color": "rgba(255, 0, 0, 1)",
+        "icon-halo-width": 0,
+        "icon-halo-blur": 12,
+        "icon-opacity": 0.8
       }
     },
     {

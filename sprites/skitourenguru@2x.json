@@ -1,66 +1,93 @@
 {
   "accident": {
-    "height": 872,
+    "height": 860,
     "pixelRatio": 2,
-    "width": 972,
+    "width": 960,
     "x": 0,
-    "y": 1012,
-    "sdf": true
+    "y": 1000
   },
   "dot": {
-    "height": 140,
+    "height": 128,
     "pixelRatio": 2,
-    "width": 140,
-    "x": 1012,
-    "y": 872,
-    "sdf": true
+    "width": 128,
+    "x": 1000,
+    "y": 860
+  },
+  "dot-rd1": {
+    "height": 128,
+    "pixelRatio": 2,
+    "width": 128,
+    "x": 1128,
+    "y": 860
+  },
+  "dot-rd2": {
+    "height": 128,
+    "pixelRatio": 2,
+    "width": 128,
+    "x": 1256,
+    "y": 860
+  },
+  "dot-rd3": {
+    "height": 128,
+    "pixelRatio": 2,
+    "width": 128,
+    "x": 1384,
+    "y": 860
+  },
+  "dot-rd4": {
+    "height": 128,
+    "pixelRatio": 2,
+    "width": 128,
+    "x": 1512,
+    "y": 860
+  },
+  "dot-rd5": {
+    "height": 128,
+    "pixelRatio": 2,
+    "width": 128,
+    "x": 1640,
+    "y": 860
   },
   "hut": {
-    "height": 606,
+    "height": 594,
     "pixelRatio": 2,
-    "width": 432,
-    "x": 2716,
-    "y": 572,
-    "sdf": true
+    "width": 420,
+    "x": 2680,
+    "y": 560
   },
   "risk0": {
-    "height": 872,
+    "height": 860,
     "pixelRatio": 2,
-    "width": 972,
-    "x": 972,
-    "y": 1012,
-    "sdf": true
+    "width": 960,
+    "x": 960,
+    "y": 1000
   },
   "risk1": {
-    "height": 872,
+    "height": 860,
     "pixelRatio": 2,
-    "width": 972,
-    "x": 1012,
-    "y": 0,
-    "sdf": true
+    "width": 960,
+    "x": 1000,
+    "y": 0
   },
   "risk2": {
-    "height": 732,
+    "height": 720,
     "pixelRatio": 2,
-    "width": 772,
-    "x": 1944,
-    "y": 872,
-    "sdf": true
+    "width": 760,
+    "x": 1920,
+    "y": 860
   },
   "weather-station": {
-    "height": 1012,
+    "height": 1000,
     "pixelRatio": 2,
-    "width": 1012,
+    "width": 1000,
     "x": 0,
-    "y": 0,
-    "sdf": true
+    "y": 0
   },
   "webcam": {
-    "height": 572,
+    "height": 560,
     "pixelRatio": 2,
-    "width": 812,
-    "x": 1984,
-    "y": 0,
-    "sdf": true
+    "width": 800,
+    "x": 1960,
+    "y": 0
   }
 }

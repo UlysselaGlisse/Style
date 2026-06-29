@@ -1,66 +1,93 @@
 {
   "accident": {
-    "height": 436,
+    "height": 430,
     "pixelRatio": 1,
-    "width": 486,
+    "width": 480,
     "x": 0,
-    "y": 506,
-    "sdf": true
+    "y": 500
   },
   "dot": {
-    "height": 70,
+    "height": 64,
     "pixelRatio": 1,
-    "width": 70,
-    "x": 506,
-    "y": 436,
-    "sdf": true
+    "width": 64,
+    "x": 500,
+    "y": 430
+  },
+  "dot-rd1": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 564,
+    "y": 430
+  },
+  "dot-rd2": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 628,
+    "y": 430
+  },
+  "dot-rd3": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 692,
+    "y": 430
+  },
+  "dot-rd4": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 756,
+    "y": 430
+  },
+  "dot-rd5": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 820,
+    "y": 430
   },
   "hut": {
-    "height": 303,
+    "height": 297,
     "pixelRatio": 1,
-    "width": 216,
-    "x": 1358,
-    "y": 286,
-    "sdf": true
+    "width": 210,
+    "x": 1340,
+    "y": 280
   },
   "risk0": {
-    "height": 436,
+    "height": 430,
     "pixelRatio": 1,
-    "width": 486,
-    "x": 486,
-    "y": 506,
-    "sdf": true
+    "width": 480,
+    "x": 480,
+    "y": 500
   },
   "risk1": {
-    "height": 436,
+    "height": 430,
     "pixelRatio": 1,
-    "width": 486,
-    "x": 506,
-    "y": 0,
-    "sdf": true
+    "width": 480,
+    "x": 500,
+    "y": 0
   },
   "risk2": {
-    "height": 366,
+    "height": 360,
     "pixelRatio": 1,
-    "width": 386,
-    "x": 972,
-    "y": 436,
-    "sdf": true
+    "width": 380,
+    "x": 960,
+    "y": 430
   },
   "weather-station": {
-    "height": 506,
+    "height": 500,
     "pixelRatio": 1,
-    "width": 506,
+    "width": 500,
     "x": 0,
-    "y": 0,
-    "sdf": true
+    "y": 0
   },
   "webcam": {
-    "height": 286,
+    "height": 280,
     "pixelRatio": 1,
-    "width": 406,
-    "x": 992,
-    "y": 0,
-    "sdf": true
+    "width": 400,
+    "x": 980,
+    "y": 0
   }
 }
