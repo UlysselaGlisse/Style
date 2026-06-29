@@ -6,13 +6,6 @@
     "x": 0,
     "y": 500
   },
-  "dot": {
-    "height": 128,
-    "pixelRatio": 1,
-    "width": 128,
-    "x": 980,
-    "y": 280
-  },
   "hut": {
     "height": 297,
     "pixelRatio": 1,

@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="33.779263mm"
-   height="33.845325mm"
-   viewBox="0 0 33.779263 33.845325"
+   width="64"
+   height="64"
+   viewBox="0 0 16.933327 16.933327"
    version="1.1"
    id="svg1"
    inkscape:export-filename="dot.svg"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showborder="false"
-     inkscape:zoom="0.74118969"
-     inkscape:cx="62.062385"
-     inkscape:cy="94.44276"
+     inkscape:zoom="4.192802"
+     inkscape:cx="44.480993"
+     inkscape:cy="56.286941"
      inkscape:window-width="1512"
      inkscape:window-height="921"
      inkscape:window-x="0"
@@ -39,13 +39,13 @@
      inkscape:clip-to-page="false" />
   <defs
      id="defs1" />
-  <ellipse
-     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.553068;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.55307;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      id="path5"
-     cx="16.889631"
-     cy="16.922663"
-     rx="16.889631"
-     ry="16.922663"
+     cx="8.3087711"
+     cy="8.5298672"
      inkscape:label="path5"
-     inkscape:highlight-color="#f55f5f" />
+     inkscape:highlight-color="#f55f5f"
+     transform="matrix(1,0,0.00372895,0.99999305,0,0)"
+     r="6.005682" />
 </svg>

@@ -523,7 +523,7 @@
         "fill-color": "#000000",
         "fill-antialias": true,
         "fill-opacity": 0.8,
-        "fill-pattern": "risk2"
+        "fill-pattern": "dot"
       }
     },
     {
