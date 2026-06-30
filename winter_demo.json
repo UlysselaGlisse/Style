@@ -217,7 +217,7 @@
               0
             ],
             [
-              13.5,
+              13.1,
               0.4
             ]
           ]
@@ -240,7 +240,7 @@
               0
             ],
             [
-              13.5,
+              13.1,
               0.4
             ]
           ]
@@ -263,7 +263,7 @@
               0
             ],
             [
-              13.5,
+              13.1,
               0.4
             ]
           ]
@@ -286,7 +286,7 @@
               0
             ],
             [
-              13.5,
+              13.1,
               0.4
             ]
           ]
@@ -753,11 +753,15 @@
           16,
           0.8
         ],
-        "icon-allow-overlap": true,
-        "icon-ignore-placement": true,
+        "icon-allow-overlap": false,
+        "icon-ignore-placement": false,
         "visibility": "visible",
         "icon-rotation-alignment": "map",
-        "icon-image": "accident"
+        "icon-image": "accident",
+        "icon-overlap": "cooperative",
+        "icon-optional": false,
+        "symbol-avoid-edges": false,
+        "symbol-placement": "point"
       },
       "paint": {
         "icon-halo-color": "rgba(0, 0, 0, 0)",
@@ -776,27 +780,7 @@
       "minzoom": 13,
       "layout": {
         "icon-image": "hut",
-        "visibility": "visible",
-        "icon-size": 0.09,
-        "icon-allow-overlap": false,
-        "icon-overlap": "never",
-        "icon-ignore-placement": false,
-        "icon-optional": false,
-        "text-field": "",
-        "text-anchor": "left",
-        "text-radial-offset": 1,
-        "text-size": 12,
-        "text-font": [
-          "Open Sans Cond Light",
-          "Arial Unicode MS Regular"
-        ]
-      },
-      "paint": {
-        "icon-color": "rgba(255, 255, 255, 1)",
-        "icon-halo-color": "rgba(255, 0, 0, 1)",
-        "icon-halo-width": 0,
-        "icon-halo-blur": 12,
-        "icon-opacity": 0.8
+        "icon-size": 0.35
       }
     },
     {
@@ -807,7 +791,7 @@
       },
       "source": "sg-poi",
       "source-layer": "WebCams_Huts",
-      "minzoom": 13,
+      "minzoom": 12,
       "layout": {
         "icon-image": "webcam",
         "icon-size": 0.6
