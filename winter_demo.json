@@ -185,7 +185,7 @@
       "type": "raster",
       "source": "sg-topo",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": 1
@@ -749,9 +749,9 @@
             "zoom"
           ],
           13,
-          0.05,
+          2,
           16,
-          0.09
+          2
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -810,7 +810,7 @@
       "minzoom": 13,
       "layout": {
         "icon-image": "webcam",
-        "icon-size": 0.05
+        "icon-size": 3
       }
     }
   ],
