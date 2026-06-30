@@ -173,6 +173,9 @@
     {
       "id": "background",
       "type": "background",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "background-color": "rgba(255, 255, 255, 1)"
       }
@@ -182,7 +185,7 @@
       "type": "raster",
       "source": "sg-topo",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": 1
@@ -464,7 +467,14 @@
         "COLD_PERIODE"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "fill-sort-key": [
+          "to-number",
+          [
+            "get",
+            "rdlin"
+          ]
+        ]
       },
       "paint": {
         "fill-color": [
@@ -502,7 +512,7 @@
           8.5,
           0
         ],
-        "fill-outline-color": "rgba(0, 0, 0, 0)"
+        "fill-outline-color": "rgba(0, 0, 0, 0.5)"
       }
     },
     {
@@ -520,7 +530,14 @@
         "HOT_PERIODE"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "fill-sort-key": [
+          "to-number",
+          [
+            "get",
+            "rdlin"
+          ]
+        ]
       },
       "paint": {
         "fill-antialias": true,
@@ -534,9 +551,9 @@
             "zoom"
           ],
           5,
-          0.7,
+          0.5,
           8.4,
-          0.7,
+          0.5,
           8.5,
           0
         ],
@@ -565,7 +582,7 @@
       "id": "avalanche-bulletins-outline-hotperiode",
       "type": "line",
       "source": "sg-bulletins",
-      "minzoom": 7,
+      "minzoom": 5,
       "maxzoom": 9,
       "filter": [
         "all",
@@ -576,7 +593,14 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "line-sort-key": [
+          "to-number",
+          [
+            "get",
+            "rdlin"
+          ]
+        ]
       },
       "paint": {
         "line-opacity": [
@@ -588,7 +612,7 @@
           [
             "zoom"
           ],
-          7,
+          5,
           0.9,
           9,
           0
@@ -611,7 +635,22 @@
           "#000000",
           "#cccccc"
         ],
-        "line-width": 3,
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            100
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.1,
+          7,
+          2,
+          9,
+          0
+        ],
         "line-blur": 1
       }
     },
@@ -630,18 +669,26 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "line-sort-key": [
+          "to-number",
+          [
+            "get",
+            "rdlin"
+          ]
+        ]
       },
       "paint": {
         "line-opacity": [
           "interpolate",
           [
-            "linear"
+            "exponential",
+            100
           ],
           [
             "zoom"
           ],
-          7,
+          5,
           0.9,
           9,
           0
@@ -664,7 +711,22 @@
           "#000000",
           "#cccccc"
         ],
-        "line-width": 3,
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            10
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.1,
+          7,
+          3,
+          9,
+          0
+        ],
         "line-blur": 3
       }
     },
