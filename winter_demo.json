@@ -568,12 +568,12 @@
           2,
           "dot-rd2",
           3,
-          "dot-losange-rd3",
+          "dot-rd3",
           4,
           "dot-rd4",
           5,
           "dot-rd5",
-          "dot"
+          "dot-rd5"
         ],
         "fill-outline-color": "rgba(255, 255, 255, 0)"
       }
