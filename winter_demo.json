@@ -456,7 +456,7 @@
       },
       "source": "sg-bulletins",
       "minzoom": 5,
-      "maxzoom": 10,
+      "maxzoom": 9,
       "filter": [
         "in",
         "dayper",
@@ -489,18 +489,17 @@
         "fill-opacity": [
           "interpolate",
           [
-            "linear"
+            "exponential",
+            10
           ],
           [
             "zoom"
           ],
           5,
-          0,
-          5.05,
-          0.5,
-          9.8,
-          0.5,
-          10,
+          0.4,
+          8.4,
+          0.4,
+          8.5,
           0
         ],
         "fill-outline-color": "rgba(0, 0, 0, 0)"
@@ -514,7 +513,7 @@
       },
       "source": "sg-bulletins",
       "minzoom": 5,
-      "maxzoom": 10,
+      "maxzoom": 9,
       "filter": [
         "==",
         "dayper",
@@ -525,7 +524,22 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-opacity": 0.8,
+        "fill-opacity": [
+          "interpolate",
+          [
+            "exponential",
+            10
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.9,
+          8.4,
+          0.9,
+          8.5,
+          0
+        ],
         "fill-pattern": [
           "match",
           [
@@ -548,11 +562,11 @@
       }
     },
     {
-      "id": "avalanche-bulletins-outline-copy",
+      "id": "avalanche-bulletins-outline-hotperiode",
       "type": "line",
       "source": "sg-bulletins",
-      "minzoom": 5,
-      "maxzoom": 10,
+      "minzoom": 7,
+      "maxzoom": 9,
       "filter": [
         "all",
         [
@@ -568,18 +582,15 @@
         "line-opacity": [
           "interpolate",
           [
-            "linear"
+            "exponential",
+            100
           ],
           [
             "zoom"
           ],
-          5,
-          0,
-          5.05,
-          0.8,
-          9.8,
-          0.8,
-          10,
+          7,
+          0.9,
+          9,
           0
         ],
         "line-color": [
@@ -601,15 +612,15 @@
           "#cccccc"
         ],
         "line-width": 3,
-        "line-blur": 3
+        "line-blur": 1
       }
     },
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
       "source": "sg-bulletins",
-      "minzoom": 5,
-      "maxzoom": 10,
+      "minzoom": 7,
+      "maxzoom": 9,
       "filter": [
         "all",
         [
@@ -630,13 +641,9 @@
           [
             "zoom"
           ],
-          5,
-          0,
-          5.05,
-          0.8,
-          9.8,
-          0.8,
-          10,
+          7,
+          0.9,
+          9,
           0
         ],
         "line-color": [
