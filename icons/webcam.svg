@@ -24,56 +24,85 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      showborder="false"
-     inkscape:zoom="11.885714"
-     inkscape:cx="13.377404"
-     inkscape:cy="20.78125"
+     inkscape:zoom="16"
+     inkscape:cx="8.9375"
+     inkscape:cy="20.125"
      inkscape:window-width="1512"
      inkscape:window-height="921"
      inkscape:window-x="0"
      inkscape:window-y="33"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
+     inkscape:current-layer="Ebene_1-2" />
   <defs
      id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,1.1612457,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
     <style
        id="style1">.webcams-class1{opacity:0.37;}.webcams-class2{fill:#fff;}.webcams-class3{fill:none;stroke:#191919;stroke-miterlimit:10;}</style>
     <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
-       id="filter24"
-       x="-0.16408669"
-       y="-0.26740666"
-       width="1.380805"
-       height="1.6004036">
+       id="filter47"
+       x="-0.044582045"
+       y="-0.072653888"
+       width="1.1294118"
+       height="1.2058527">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.603922"
          flood-color="rgb(0,0,0)"
-         id="feFlood23" />
+         id="feFlood46" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
-         stdDeviation="2.000000"
-         id="feGaussianBlur23" />
+         stdDeviation="0.600000"
+         id="feGaussianBlur46" />
       <feOffset
          result="offset"
          in="blur"
-         dx="1.700000"
-         dy="1.300000"
-         id="feOffset23" />
+         dx="1.300000"
+         dy="1.200000"
+         id="feOffset46" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite23" />
+         id="feComposite46" />
       <feComposite
          result="comp2"
          operator="over"
          in="SourceGraphic"
          in2="comp1"
-         id="feComposite24" />
+         id="feComposite47" />
     </filter>
   </defs>
   <title
@@ -81,19 +110,21 @@
   <g
      id="Ebene_2"
      data-name="Ebene 2"
-     transform="matrix(0.6,0,0,0.6,0,3.7019231)"
-     style="filter:url(#filter24)">
+     transform="matrix(0.6,0,0,0.6,1.0000342e-8,3.7019231)">
     <g
        id="Ebene_1-2"
        data-name="Ebene 1">
       <path
          class="webcams-class2"
-         d="M 31.6,4.18 25.1,7.92 V 6.71 A 3.88,3.88 0 0 0 21.22,2.84 H 5.41 A 3.87,3.87 0 0 0 1.54,6.71 v 12.07 a 3.88,3.88 0 0 0 3.87,3.88 h 15.81 a 3.88,3.88 0 0 0 3.88,-3.88 v -1.2 l 6.5,3.73 c 1.23,0.71 2.24,0.13 2.24,-1.29 V 5.48 c 0,-1.42 -1.01,-2 -2.24,-1.3 z"
-         id="path1" />
+         d="M 31.6,4.18 25.1,7.92 V 6.71 C 25.094487,4.5710415 23.358966,2.8399929 21.22,2.84 H 5.41 c -2.137342,0 -3.87,1.732658 -3.87,3.87 v 12.07 c -7.1e-6,2.138966 1.7310415,3.874487 3.87,3.88 h 15.81 c 2.161279,0 3.88,-1.718721 3.88,-3.88 v -1.2 l 6.5,3.73 c 1.23,0.71 2.24,0.13 2.24,-1.29 V 5.48 c 0,-1.42 -1.01,-2 -2.24,-1.3 z"
+         id="path1"
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter47)"
+         sodipodi:nodetypes="ccccssccssccssc" />
       <path
          class="webcams-class3"
          d="M 31.6,4.18 25.1,7.92 V 6.71 A 3.88,3.88 0 0 0 21.22,2.84 H 5.41 A 3.87,3.87 0 0 0 1.54,6.71 v 12.07 a 3.88,3.88 0 0 0 3.87,3.88 h 15.81 a 3.88,3.88 0 0 0 3.88,-3.88 v -1.2 l 6.5,3.73 c 1.23,0.71 2.24,0.13 2.24,-1.29 V 5.48 c 0,-1.42 -1.01,-2 -2.24,-1.3 z"
-         id="path2" />
+         id="path2"
+         style="display:inline" />
     </g>
   </g>
   <metadata
@@ -105,4 +136,11 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.578;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="M 2.6502405,9.9278849 V 7.8078805 A 1.1612457,1.1612457 135 0 1 3.8114862,6.6466348 h 1.9938024"
+     id="path5"
+     inkscape:path-effect="#path-effect6"
+     inkscape:original-d="M 2.6502405,9.9278849 V 6.6466348 h 3.1550481"
+     transform="translate(-0.31249999,0.1250001)" />
 </svg>
