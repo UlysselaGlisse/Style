@@ -749,9 +749,9 @@
             "zoom"
           ],
           13,
-          2,
+          0.5,
           16,
-          2
+          0
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -810,7 +810,7 @@
       "minzoom": 13,
       "layout": {
         "icon-image": "webcam",
-        "icon-size": 3
+        "icon-size": 0.6
       }
     }
   ],
