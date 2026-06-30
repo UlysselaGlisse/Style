@@ -794,7 +794,19 @@
       "minzoom": 12,
       "layout": {
         "icon-image": "webcam",
-        "icon-size": 0.6
+        "icon-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          0.5,
+          16,
+          0.8
+        ]
       }
     }
   ],
