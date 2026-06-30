@@ -749,9 +749,9 @@
             "zoom"
           ],
           13,
-          0.5,
+          1,
           16,
-          0
+          1
         ],
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,

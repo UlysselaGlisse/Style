@@ -70,27 +70,28 @@
        style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter47"
-       x="-0.044582045"
-       y="-0.072653888"
-       width="1.1294118"
-       height="1.2058527">
+       x="-0.074303406"
+       y="-0.12108981"
+       width="1.2198142"
+       height="1.3531786">
       <feFlood
          result="flood"
          in="SourceGraphic"
-         flood-opacity="0.603922"
+         flood-opacity="0.60245901639344257"
          flood-color="rgb(0,0,0)"
          id="feFlood46" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
-         stdDeviation="0.600000"
+         stdDeviation="1"
          id="feGaussianBlur46" />
       <feOffset
          result="offset"
          in="blur"
-         dx="1.300000"
-         dy="1.200000"
-         id="feOffset46" />
+         dx="2.2999999999999998"
+         dy="2.2000000000000002"
+         id="feOffset46"
+         preserveAlpha="false" />
       <feComposite
          result="comp1"
          operator="in"
