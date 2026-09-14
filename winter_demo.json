@@ -32,18 +32,6 @@
         "stale-if-error": true
       }
     },
-    "skitourenguru::groups": {
-      "groups": [
-        {
-          "id": "routes",
-          "layers": [
-            "routes",
-            "routes-risks-case",
-            "routes-risks"
-          ]
-        }
-      ]
-    },
     "maputnik:renderer": "mlgljs"
   },
   "light": {
@@ -173,6 +161,7 @@
     {
       "id": "background",
       "type": "background",
+      "metadata": "groups::base",
       "layout": {
         "visibility": "visible"
       },
@@ -207,21 +196,10 @@
       "source": "sg-sacm5",
       "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": {
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.1,
-              0.4
-            ]
-          ]
-        }
+        "raster-opacity": 0.4
       }
     },
     {
@@ -230,7 +208,7 @@
       "source": "sg-athm",
       "minzoom": 13,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -308,36 +286,45 @@
       },
       "paint": {
         "line-color": "rgba(0, 0, 255, 1)",
-        "line-opacity": [
-          "interpolate",
-          [
-            "exponential",
-            8
-          ],
-          [
-            "zoom"
-          ],
-          11,
-          0,
-          11.05,
-          1
-        ],
+        "line-opacity": 0.9,
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            1.2
+            "linear"
           ],
           [
             "zoom"
           ],
           11,
-          0,
-          11.5,
+          1,
+          15,
+          5
+        ],
+        "line-dasharray": [
           3,
-          14,
-          5.5
+          1.5,
+          3,
+          1.5,
+          3,
+          5
         ]
+      }
+    },
+    {
+      "id": "routes-fall-risk",
+      "type": "line",
+      "source": "sg-routes",
+      "source-layer": "Alps_FootSections",
+      "filter": [
+        "any",
+        [
+          "==",
+          "name",
+          ""
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
