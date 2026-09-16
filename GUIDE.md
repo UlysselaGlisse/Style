@@ -1,5 +1,15 @@
 # Maputnik 
 
+## Zoom
+Les niveaux de zoom auxquels les moteurs de rendu de maplibre rendent les tuiles ne correspondent pas au niveau de zoom annoncé.
+
+Ex: Raster (idem MapLibre GL, MapLibre native):
+Niveau 11 = 11,5
+
+Vecteur:
+Niveau 11 = 11 Maplibre GL, 12 MapLibre Native
+ 
+
 ## Pointillé (dasharray):
 
 Tableau [] comportant un nombre pair d'entiers (["literal", [2, 1]])
