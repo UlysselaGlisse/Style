@@ -320,7 +320,7 @@
       "type": "line",
       "source": "sg-routes",
       "source-layer": "Alps_FootSections",
-      "minzoom": 11,
+      "minzoom": 12,
       "layout": {
         "visibility": "visible",
         "line-round-limit": 1,
@@ -338,7 +338,7 @@
           [
             "zoom"
           ],
-          12,
+          12.5,
           1,
           15,
           4
@@ -355,7 +355,7 @@
       "type": "line",
       "source": "sg-routes-risks",
       "source-layer": "Alps_Segments_3035",
-      "minzoom": 11,
+      "minzoom": 12,
       "maxzoom": 24,
       "filter": [
         "all"
@@ -477,7 +477,7 @@
         "COLD_PERIODE"
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "fill-sort-key": [
           "to-number",
           [
@@ -542,7 +542,7 @@
         "HOT_PERIODE"
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "fill-sort-key": [
           "to-number",
           [
@@ -607,7 +607,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-sort-key": [
           "to-number",
           [
