@@ -49,7 +49,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128,
+      "tileSize": 164,
       "volatile": true
     },
     "sg-bulletins": {
@@ -95,7 +95,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 128,
+      "tileSize": 256,
       "volatile": true
     },
     "sg-symbols": {
@@ -672,6 +672,9 @@
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
+      "metadata": {
+        "clickable": true
+      },
       "source": "sg-bulletins",
       "minzoom": 7,
       "maxzoom": 9,
@@ -775,7 +778,8 @@
       "id": "poi-hut",
       "type": "symbol",
       "metadata": {
-        "clickable": true
+        "clickable": true,
+        "groups": "poi"
       },
       "source": "sg-poi",
       "source-layer": "Alps_Huts",
@@ -789,7 +793,8 @@
       "id": "poi-webcam",
       "type": "symbol",
       "metadata": {
-        "clickable": true
+        "clickable": true,
+        "groups": "poi"
       },
       "source": "sg-poi",
       "source-layer": "WebCams_Huts",
