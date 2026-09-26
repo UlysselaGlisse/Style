@@ -477,7 +477,7 @@
         "COLD_PERIODE"
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "fill-sort-key": [
           "to-number",
           [
@@ -542,7 +542,7 @@
         "HOT_PERIODE"
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "fill-sort-key": [
           "to-number",
           [
@@ -607,7 +607,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-sort-key": [
           "to-number",
           [
@@ -687,7 +687,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-sort-key": [
           "to-number",
           [
