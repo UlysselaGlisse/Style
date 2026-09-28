@@ -361,6 +361,9 @@
           0,
           1
         ]
+      },
+      "promoteId": {
+        "Alps_Routes": "id"
       }
     },
     {
