@@ -316,41 +316,6 @@
       }
     },
     {
-      "id": "routes-foot-sections",
-      "type": "line",
-      "source": "sg-routes",
-      "source-layer": "Alps_FootSections",
-      "minzoom": 12,
-      "layout": {
-        "visibility": "visible",
-        "line-round-limit": 1,
-        "line-miter-limit": 2,
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-opacity": 1,
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          12.5,
-          1,
-          15,
-          4
-        ],
-        "line-dasharray": [
-          2,
-          3
-        ],
-        "line-color": "rgba(255, 255, 255, 1)"
-      }
-    },
-    {
       "id": "routes-risks-cases",
       "type": "line",
       "source": "sg-routes-risks",
@@ -369,18 +334,15 @@
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            1.2
+            "linear"
           ],
           [
             "zoom"
           ],
-          11,
-          0,
-          11.1,
+          12,
           3,
           14,
-          6
+          8
         ],
         "line-opacity": 1,
         "line-color": "rgba(0, 0, 0, 1)",
@@ -396,7 +358,7 @@
       },
       "source": "sg-routes-risks",
       "source-layer": "Alps_Segments_3035",
-      "minzoom": 11,
+      "minzoom": 12,
       "maxzoom": 24,
       "filter": [
         "all"
@@ -432,34 +394,58 @@
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            1.2
+            "linear"
           ],
           [
             "zoom"
           ],
-          11,
-          0,
-          11.1,
+          12,
           1,
           14,
           3
         ],
-        "line-opacity": [
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "routes-foot-sections",
+      "type": "line",
+      "source": "sg-routes",
+      "source-layer": "Alps_FootSections",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round",
+        "line-miter-limit": 2
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-width": [
           "interpolate",
           [
-            "exponential",
-            8
+            "linear"
           ],
           [
             "zoom"
           ],
-          11,
-          0,
-          11.05,
-          1
-        ]
+          13,
+          1,
+          15,
+          4
+        ],
+        "line-dasharray": [
+          1,
+          3
+        ],
+        "line-color": "rgba(255, 255, 255, 1)"
       }
+    },
+    {
+      "id": "routes-cruxes",
+      "type": "symbol",
+      "source": "sg-routes",
+      "source-layer": "Alps_Cruxes"
     },
     {
       "id": "routes-symbols",

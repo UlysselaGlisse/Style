@@ -48,39 +48,46 @@
     "x": 0,
     "y": 48
   },
-  "risk0": {
+  "map-pin": {
     "height": 48,
     "pixelRatio": 1,
     "width": 48,
     "x": 48,
     "y": 0
   },
-  "risk1": {
+  "risk0": {
     "height": 48,
     "pixelRatio": 1,
     "width": 48,
     "x": 48,
     "y": 48
+  },
+  "risk1": {
+    "height": 48,
+    "pixelRatio": 1,
+    "width": 48,
+    "x": 96,
+    "y": 0
   },
   "risk2": {
     "height": 48,
     "pixelRatio": 1,
     "width": 48,
     "x": 96,
-    "y": 0
+    "y": 48
   },
   "weather-station": {
     "height": 48,
     "pixelRatio": 1,
     "width": 48,
-    "x": 96,
-    "y": 48
+    "x": 144,
+    "y": 0
   },
   "webcam": {
     "height": 48,
     "pixelRatio": 1,
     "width": 48,
-    "x": 144,
+    "x": 192,
     "y": 0
   }
 }
