@@ -49,7 +49,7 @@
       "minzoom": 0,
       "maxzoom": 24,
       "scheme": "xyz",
-      "tileSize": 164,
+      "tileSize": 128,
       "volatile": true
     },
     "sg-bulletins": {
