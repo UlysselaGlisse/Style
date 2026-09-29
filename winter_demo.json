@@ -288,7 +288,19 @@
         "line-round-limit": 1
       },
       "paint": {
-        "line-color": "rgba(0, 0, 255, 1)",
+        "line-color": [
+          "case",
+          [
+            "boolean",
+            [
+              "feature-state",
+              "selected"
+            ],
+            false
+          ],
+          "rgba(255, 106, 0, 1)",
+          "rgba(0, 0, 255, 1)"
+        ],
         "line-opacity": 1,
         "line-width": [
           "interpolate",
@@ -299,9 +311,33 @@
             "zoom"
           ],
           12.5,
-          1,
+          [
+            "case",
+            [
+              "boolean",
+              [
+                "feature-state",
+                "selected"
+              ],
+              false
+            ],
+            2.5,
+            1
+          ],
           15,
-          4
+          [
+            "case",
+            [
+              "boolean",
+              [
+                "feature-state",
+                "selected"
+              ],
+              false
+            ],
+            7,
+            4
+          ]
         ],
         "line-dasharray": [
           3,
@@ -312,7 +348,22 @@
           4.5
         ],
         "line-translate-anchor": "map",
-        "line-blur": 1
+        "line-blur": [
+          "case",
+          [
+            "boolean",
+            [
+              "feature-state",
+              "selected"
+            ],
+            false
+          ],
+          0,
+          1
+        ]
+      },
+      "promoteId": {
+        "Alps_Routes": "id"
       }
     },
     {
@@ -672,9 +723,6 @@
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
-      "metadata": {
-        "clickable": true
-      },
       "source": "sg-bulletins",
       "minzoom": 7,
       "maxzoom": 9,
