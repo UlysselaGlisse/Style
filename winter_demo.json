@@ -436,12 +436,6 @@
       }
     },
     {
-      "id": "routes-cruxes",
-      "type": "symbol",
-      "source": "sg-routes",
-      "source-layer": "Alps_Cruxes"
-    },
-    {
       "id": "routes-symbols",
       "type": "symbol",
       "source": "sg-symbols",
@@ -464,7 +458,7 @@
           2,
           "risk2"
         ],
-        "icon-size": 0.5
+        "icon-size": 0.4
       }
     },
     {
