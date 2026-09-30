@@ -11,6 +11,10 @@
         "cache-policy": "cache-first",
         "stale-if-error": false
       },
+      "sg-symbols": {
+        "cache-policy": "cache-first",
+        "stale-if-error": false
+      },
       "sg-routes": {
         "cache-policy": "cache-first",
         "stale-if-error": true
@@ -38,7 +42,7 @@
     "color": "rgba(255, 219, 0, 1)"
   },
   "projection": {
-    "type": "mercator"
+    "type": "globe"
   },
   "sources": {
     "sg-topo": {
@@ -163,7 +167,7 @@
       "type": "background",
       "metadata": "groups::base",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "background-color": "rgba(255, 255, 255, 1)"
@@ -178,16 +182,6 @@
       },
       "paint": {
         "raster-opacity": 1
-      }
-    },
-    {
-      "id": "overlays",
-      "type": "background",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "background-color": "rgba(0, 0, 0, 0)"
       }
     },
     {
@@ -298,10 +292,10 @@
           [
             "zoom"
           ],
-          12.5,
-          1,
-          15,
-          4
+          12,
+          2,
+          14,
+          5
         ],
         "line-dasharray": [
           3,
@@ -412,7 +406,7 @@
       "type": "line",
       "source": "sg-routes",
       "source-layer": "Alps_FootSections",
-      "minzoom": 13,
+      "minzoom": 12,
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -429,10 +423,10 @@
           [
             "zoom"
           ],
-          13,
+          12,
           1,
-          15,
-          4
+          14,
+          3
         ],
         "line-dasharray": [
           1,
