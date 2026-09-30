@@ -42,7 +42,7 @@
     "color": "rgba(255, 219, 0, 1)"
   },
   "projection": {
-    "type": "globe"
+    "type": "mercator"
   },
   "sources": {
     "sg-topo": {
@@ -515,8 +515,7 @@
         "fill-opacity": [
           "interpolate",
           [
-            "exponential",
-            10
+            "linear"
           ],
           [
             "zoom"
@@ -524,11 +523,7 @@
           5,
           0.4,
           7.5,
-          0.6,
-          8.4,
-          0.6,
-          8.5,
-          0
+          0.5
         ],
         "fill-outline-color": "rgba(0, 0, 0, 0.5)"
       }
@@ -562,20 +557,15 @@
         "fill-opacity": [
           "interpolate",
           [
-            "exponential",
-            10
+            "linear"
           ],
           [
             "zoom"
           ],
           5,
-          0.5,
+          0.4,
           7.5,
-          0.7,
-          8.4,
-          0.7,
-          8.5,
-          0
+          0.5
         ],
         "fill-pattern": [
           "match",
@@ -623,22 +613,7 @@
         ]
       },
       "paint": {
-        "line-opacity": [
-          "interpolate",
-          [
-            "exponential",
-            100
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0.9,
-          7.5,
-          1,
-          9,
-          0
-        ],
+        "line-opacity": 1,
         "line-color": [
           "match",
           [
@@ -660,29 +635,23 @@
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            100
+            "linear"
           ],
           [
             "zoom"
           ],
           5,
-          0.1,
+          1,
           7.5,
-          3.5,
-          8.5,
-          0
+          2.5
         ]
       }
     },
     {
       "id": "avalanche-bulletins-outline",
       "type": "line",
-      "metadata": {
-        "clickable": true
-      },
       "source": "sg-bulletins",
-      "minzoom": 7,
+      "minzoom": 5,
       "maxzoom": 9,
       "filter": [
         "all",
@@ -703,20 +672,7 @@
         ]
       },
       "paint": {
-        "line-opacity": [
-          "interpolate",
-          [
-            "exponential",
-            100
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0.9,
-          9,
-          0
-        ],
+        "line-opacity": 1,
         "line-color": [
           "match",
           [
@@ -738,20 +694,16 @@
         "line-width": [
           "interpolate",
           [
-            "exponential",
-            10
+            "linear"
           ],
           [
             "zoom"
           ],
           5,
-          0.1,
-          7,
-          3,
-          9,
-          0
-        ],
-        "line-blur": 3
+          1,
+          7.5,
+          2.5
+        ]
       }
     },
     {
