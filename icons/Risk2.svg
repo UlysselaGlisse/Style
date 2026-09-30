@@ -26,18 +26,60 @@
      inkscape:deskcolor="#d1d1d1"
      showborder="false"
      inkscape:zoom="4.6222223"
-     inkscape:cx="25.637019"
+     inkscape:cx="25.745192"
      inkscape:cy="49.002403"
-     inkscape:window-width="1920"
+     inkscape:window-width="1040"
      inkscape:window-height="1022"
-     inkscape:window-x="1512"
+     inkscape:window-x="1788"
      inkscape:window-y="30"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <style
        id="style1">.symbols2-class1{opacity:0.37;}.symbols2-class2{fill:rgba(227,6,19,1);stroke:#191919;stroke-miterlimit:10;}</style>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1"
+       inkscape:label="filtre1" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter41"
+       x="-0.14202642"
+       y="-0.14202642"
+       width="1.3349314"
+       height="1.3349314">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.79999999999999993"
+         flood-color="rgb(0,0,0)"
+         id="feFlood40" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.500000"
+         id="feGaussianBlur40" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="1.500000"
+         dy="1.500000"
+         id="feOffset40" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite40" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite41" />
+    </filter>
   </defs>
   <title
      id="title1">h_1</title>
@@ -48,12 +90,13 @@
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsSAAALEgHS3X78AAADO0lEQVRYR9XY0W9URRjG4WeWrlXboLEBrBYMkRC48AbSeG385xETLvSCBkmIgq2t1iABarvtjhffTHvO9mzZtruhvslmtp2ZM7/zzjez803KOTurUkqpfh2pypDP+PB0mn4jEAl9fFDKWpcxwF4ps+CbeKCJoApMD3OYFxB9fIKruFzqYB+vsIWX+Ld89jGcBO6dUCmlngBYxGf4XMAs4Bq+LuV86bKLTTzFOv7EBv7GawxyzkMn6ESolNIlfCTcuInbuCMgFrSd6pduA+HUJv7CC6zhCZ4JB3dyzgfGaCxUA2gF9/At7uKGgKlTOC6mdsW0vcRveIwf8EiAjgWb06EG0HWs4jvcx7KYxgoxbvX1BOyieIElMe019hKep5Q6wY5BlRiqDq3i+1Ku4GMx4CjEqJrANSbnxXi9RrtOsBZUWWV9ESf3hEOrwrEKdFolXBIxeH2kLuNFSultM/hHneoJy2+KGLqv7dB51BPPqWBDsU3s4feU0l7dLg6hGi4tiVV2V8TQNICqKtiKo/1sE/+IBXFQGzU7LOArfFPKRdMDqqpgy+LFb4v9b67+YvQ4dGmuVN4qnyXtpT5N1TC5Ifa9ZXyojNV0YV4s2zul8YLpu1RVQ+VTfIkrOqBqo8tit6479CxcqkoC5Aq+EID9VPakZqOuHXpWSmJ2rolwuSrG7pyeWcNUjZ2dWcXMpOqcnfcNVdWanYsC1dJFgWqdn7qg3nlcnaK6zvMtqM4GM1Qdr/7+vSp/5wo1tsGxR01PQ7wRp9I1/CFOqy2ndkvFWmn4pnSchaoJ2yLBeCoSi/2cczhVzjH7paI22jY7t4Yis/kVP5fy0ISmU9XOZsPXpu/WEDsi7XosspxtkXq1A738o1r6pHTYwFvTA8tiIW3hJzwUaVfr5UePw9XWZyIdqtnHec7oVUMBVF/6gQDb0nCJEaicc04pDUrDR9rZx2mymaayoynbEkA/ihBZF/lfayaOpVg552FKaUckjHXwesifNO/Ljc9AuL8hnHkggH4xJmY7k9Gc80EBey4eXA/5582QHwqwdUf3CsdW93u7S3DCDcz/79blsNFFu59q6kLd5I3TCGRTGWe+8/wPhMR3of4dnJYAAAAASUVORK5CYII="
      id="image1"
      x="11.245883"
-     y="8.7051134" />
+     y="8.7051134"
+     style="display:none" />
   <path
      class="symbols2-class2"
-     d="M 43.343517,24.016687 A 19.326837,19.326837 0 1 0 24.016681,43.343517 19.326837,19.326837 0 0 0 43.343517,24.016687"
+     d="M 38.507636,24.012516 A 14.495127,14.495127 0 1 0 24.01251,38.507636 14.495127,14.495127 0 0 0 38.507636,24.012516"
      id="path1"
-     style="stroke-width:1.31297" />
+     style="stroke-width:0.984727;filter:url(#filter41)" />
   <metadata
      id="metadata1">
     <rdf:RDF>

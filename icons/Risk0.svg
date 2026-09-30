@@ -9,7 +9,6 @@
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -26,34 +25,64 @@
      inkscape:deskcolor="#d1d1d1"
      showborder="false"
      inkscape:zoom="7.739535"
-     inkscape:cx="22.675781"
-     inkscape:cy="30.621995"
-     inkscape:window-width="1512"
-     inkscape:window-height="921"
-     inkscape:window-x="0"
-     inkscape:window-y="33"
+     inkscape:cx="22.740384"
+     inkscape:cy="30.686598"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="1512"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <style
        id="style1">.symbols0-class-1{opacity:0.37;}.symbols0-class-2{fill:rgba(51,204,102,1);stroke:#191919;stroke-miterlimit:10;}</style>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6"
+       x="-0.10509841"
+       y="-0.12130277"
+       width="1.2617262"
+       height="1.3020798">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.79999999999999993"
+         flood-color="rgb(0,0,0)"
+         id="feFlood5" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.500000"
+         id="feGaussianBlur5" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="2.000000"
+         dy="2.000000"
+         id="feOffset5" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite5" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite6" />
+    </filter>
   </defs>
   <title
      id="title1">h_1</title>
-  <image
-     class="symbols0-class-1"
-     width="46"
-     height="41.20834"
-     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAAACXBIWXMAAAsSAAALEgHS3X78AAAC4klEQVRoQ82ZXU8TQRSGn2lLK4oEaVSIiMEQlSZypxck/v+EC39FIUYlgIkfbSnjxZlpZ8tOd2Z22903abYfuzPvOXOeabtHaa1ZhZRSyj4FNIBewWSq6jGN8RbQAXpAG5gCI2Citb5fcnm0Kg1AKdUCNoAtYBd4CTwGfgOXwA/gr9Z66h0kUpUFYMxvAi+At8A74D2wA/wEvprHkAqD6BSdECJTNhuI+U/AGTAAXiMrcA30mc83VEr9qaKcKgkAqfktJPNnwBfg0LzXBp4BXXPuHTAGLpRS47Jglw7AyX4fKZsBYn4HMW+hPkDM/wK+m+M1AniyWkUnBMhm/w3w0Rxt5u1W2kZKaR8JcGCebxp2klVqBRxw94ETZAX6yIpY81Yt4ClSZp+BK2R3KlVKyQEsgHuKmDpCsp+X1cXzr4BvwC1wQ2IplVk+WzpHiPlTxFxe9t1rclfM+eaOUlIAOeCeYGqa4jHzmHlC8XW5SroIP7gh47nBH5tH8iqETJhRJLg+tZCspyQgo6gLEsD1yVuCsdtq7C6UAq5Pi2MlbavBAZQEN0+VbKsxE5cB16fS22rQ5BWB61OpxBSeVCG4PpUCOoSBKsH1KRnopQGsAFyfkoEuMlGqPiOVBLTXyIrB9Sk6YbkfrAFcn6KB9jGwDnB9igL6QQBrBNenKKDzDEXX4QoUDHTGVE3g+hSUyNmLGsH1KQhol4E6wfWpEOgOzLLfQW7I1gGuT4VAu+Z6wB7wgfltwTrNW+VxuQt0lFNLNtJt5Jb4NvWWzqJsKR0iCd5DEp7JsA2iS7PMw5IEN6FEQmU57ZqjguwupIEJ0goaE/ifdI2aMvd3h+m72QCs+Vukg3Jp3rf39JugMeJriPicANpdgRFwAZyb1wfAI5qjf4j5c8TnCJj3yJyfEc+BV0iDYlZrNUsjZXODmLfNwvtMk0/Nu4w9mrcTuYzO2rUPupTOr70mmbfSkG2YV9ZmrUv/AZlD2enAQEd9AAAAAElFTkSuQmCC"
-     id="image1"
-     x="1.7442909"
-     y="4.0352526" />
   <path
      class="symbols0-class-2"
      d="M 42.473457,36.848589 A 3.4787501,3.4787501 0 0 0 41.99429,35.037337 L 26.105125,8.5010866 a 3.3637501,3.3637501 0 0 0 -2.961252,-1.772917 3.5745836,3.5745836 0 0 0 -3.076248,1.715417 L 4.1688753,35.037337 a 3.4691667,3.4691667 0 0 0 -0.507919,1.811252 3.5362501,3.5362501 0 0 0 3.5075,3.5075 H 38.965957 a 3.5362501,3.5362501 0 0 0 3.5075,-3.5075"
      id="path1"
-     style="stroke-width:0.958337" />
+     style="stroke-width:0.958337;filter:url(#filter6)" />
   <metadata
      id="metadata1">
     <rdf:RDF>
