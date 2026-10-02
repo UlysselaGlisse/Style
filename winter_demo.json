@@ -788,7 +788,19 @@
       "minzoom": 13,
       "layout": {
         "icon-image": "hut",
-        "icon-size": 0.35
+        "icon-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          0.8,
+          16,
+          1
+        ]
       }
     },
     {

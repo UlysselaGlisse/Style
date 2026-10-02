@@ -33,10 +33,10 @@
      id="defs2">
     <filter
        id="shadow"
-       x="-0.12903226"
-       y="-0.13559122"
-       width="1.283871"
-       height="1.2745743"
+       x="-0.10967742"
+       y="-0.11525299"
+       width="1.2451613"
+       height="1.2440665"
        style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          in="SourceAlpha"
@@ -80,40 +80,45 @@
      id="g7">
     <!-- fond blanc du refuge (posé sur le rocher) -->
     <path
-       d="M14 21.4 L24 12 L34 21.4 V38.3 H31 L29.8 37.5 H28 L26.75 37.1 L25 37.4 L23.3 37.7 L21.25 37.2 L19 36 L17.4 35.3 L16 37.2 H15 L14 39.3 Z"
-       fill="#fff"
+       d="M 14,21.23027 24,12 34,21.23027 V 37.825117 H 31 L 29.8,37.039562 H 28 L 26.75,36.646784 25,36.941367 23.3,37.235951 21.25,36.744979 19,35.566646 17.4,34.879286 16,36.744979 h -1 l -1,2.062081 z"
+       fill="#ffffff"
        stroke="none"
-       id="path2" />
+       id="path2"
+       style="stroke-width:0.990931" />
     <!-- cheminée -->
     <path
        d="M29.3 17 V13.3 H32.8 V20.3 Z"
        fill="#000"
        stroke-width="1"
-       id="path3" />
+       id="path3"
+       style="stroke-width:0.4;stroke-dasharray:none" />
     <!-- toit -->
     <path
        d="M8.5 26.5 L24 12 L39.5 26.5"
        fill="none"
        stroke-width="3.2"
-       id="path4" />
+       id="path4"
+       style="stroke-width:2;stroke-dasharray:none" />
     <!-- murs -->
     <path
-       d="M14 22 V39.3 M34 22 V38.3"
+       d="M 13.99504,21.99504 V 39.058491 M 34.00496,21.99504 v 16.077124"
        fill="none"
        stroke-width="2.6"
-       id="path5" />
+       id="path5"
+       style="stroke-width:1.49;stroke-dasharray:none;stroke-miterlimit:0" />
     <!-- porte -->
     <path
        d="M21.25 28.5 H26.75 V37.1 L25 37.4 L23.3 37.7 L21.25 37.2 Z"
        fill="#000"
        stroke-width="1"
-       id="path6" />
+       id="path6"
+       style="stroke-linejoin:round" />
     <!-- socle rocheux -->
     <path
        d="M9 41.5 C9.8 40 11.3 39.3 13 39.3 H14 L15 37.2 H16 L17.4 35.3 L19 36 L21.25 37.2 L23.3 37.7 L25 37.4 L26.75 37.1 L28 37.5 H29.8 L31 38.3 H34 L34.8 39.6 C35.6 41 37.3 41.4 39.5 41"
        fill="none"
        stroke-width="2.4"
        id="path7"
-       style="stroke-width:1.8;stroke-dasharray:none" />
+       style="stroke-width:1.2;stroke-dasharray:none;stroke-linejoin:miter" />
   </g>
 </svg>
