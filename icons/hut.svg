@@ -4,7 +4,7 @@
    height="48"
    viewBox="0 0 48 48"
    version="1.1"
-   id="svg4"
+   id="svg7"
    sodipodi:docname="hut.svg"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -12,70 +12,108 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview4"
+     id="namedview7"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
+     inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showborder="false"
-     inkscape:zoom="7.9234053"
-     inkscape:cx="17.669171"
-     inkscape:cy="41.270134"
-     inkscape:window-width="1512"
-     inkscape:window-height="921"
-     inkscape:window-x="0"
-     inkscape:window-y="33"
+     inkscape:zoom="16.229167"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="1512"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg7" />
   <defs
      id="defs2">
-    <marker
-       id="a"
-       overflow="visible"
-       markerHeight="0.99999994"
-       markerWidth="0.52499998"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       viewBox="0 0 0.525 1">
-      <path
-         transform="scale(0.5)"
-         d="M 0,-1 1,0 0,1 -0.05,0 Z"
-         fill="context-stroke"
-         id="path1" />
-    </marker>
-    <marker
-       id="b"
-       overflow="visible"
-       markerHeight="0.99999994"
-       markerWidth="0.52499998"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       viewBox="0 0 0.525 1">
-      <path
-         transform="scale(0.5)"
-         d="M 0,-1 1,0 0,1 -0.05,0 Z"
-         fill="context-stroke"
-         id="path2" />
-    </marker>
+    <filter
+       id="shadow"
+       x="-0.12903226"
+       y="-0.13559122"
+       width="1.283871"
+       height="1.2745743"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feOffset
+         in="blur"
+         dx="0.8"
+         dy="0.80000000000000004"
+         result="offset"
+         id="feOffset1" />
+      <feFlood
+         flood-color="#000"
+         flood-opacity="0.80000000000000004"
+         result="flood"
+         id="feFlood1"
+         dy="0.80000000000000004" />
+      <feComposite
+         in="flood"
+         in2="offset"
+         operator="in"
+         result="shadow"
+         id="feComposite1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="shadow"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
   </defs>
   <g
-     stroke="#000000"
-     id="g4"
-     transform="matrix(0.30080651,0,0,0.30080641,-6.0806514,-12.913297)">
+     filter="url(#shadow)"
+     stroke="#000"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     id="g7">
+    <!-- fond blanc du refuge (posé sur le rocher) -->
     <path
-       d="M 50,200 V 100 l -25,25 75,-75 75,75 -25,-25 v 100 z"
-       fill="#ffffff"
-       stroke-width="5"
+       d="M14 21.4 L24 12 L34 21.4 V38.3 H31 L29.8 37.5 H28 L26.75 37.1 L25 37.4 L23.3 37.7 L21.25 37.2 L19 36 L17.4 35.3 L16 37.2 H15 L14 39.3 Z"
+       fill="#fff"
+       stroke="none"
+       id="path2" />
+    <!-- cheminée -->
+    <path
+       d="M29.3 17 V13.3 H32.8 V20.3 Z"
+       fill="#000"
+       stroke-width="1"
        id="path3" />
+    <!-- toit -->
     <path
-       d="m 25,125 75,-75 75,75"
+       d="M8.5 26.5 L24 12 L39.5 26.5"
        fill="none"
-       marker-end="url(#a)"
-       marker-start="url(#b)"
-       stroke-width="10"
+       stroke-width="3.2"
        id="path4" />
+    <!-- murs -->
+    <path
+       d="M14 22 V39.3 M34 22 V38.3"
+       fill="none"
+       stroke-width="2.6"
+       id="path5" />
+    <!-- porte -->
+    <path
+       d="M21.25 28.5 H26.75 V37.1 L25 37.4 L23.3 37.7 L21.25 37.2 Z"
+       fill="#000"
+       stroke-width="1"
+       id="path6" />
+    <!-- socle rocheux -->
+    <path
+       d="M9 41.5 C9.8 40 11.3 39.3 13 39.3 H14 L15 37.2 H16 L17.4 35.3 L19 36 L21.25 37.2 L23.3 37.7 L25 37.4 L26.75 37.1 L28 37.5 H29.8 L31 38.3 H34 L34.8 39.6 C35.6 41 37.3 41.4 39.5 41"
+       fill="none"
+       stroke-width="2.4"
+       id="path7"
+       style="stroke-width:1.8;stroke-dasharray:none" />
   </g>
 </svg>
