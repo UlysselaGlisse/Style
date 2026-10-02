@@ -785,7 +785,7 @@
       },
       "source": "sg-poi",
       "source-layer": "Alps_Huts",
-      "minzoom": 13,
+      "minzoom": 12,
       "layout": {
         "icon-image": "hut",
         "icon-size": [
@@ -796,8 +796,8 @@
           [
             "zoom"
           ],
-          13,
-          0.8,
+          12,
+          0.4,
           16,
           1
         ]
