@@ -33,10 +33,10 @@
      id="defs2">
     <filter
        id="shadow"
-       x="-0.10967742"
-       y="-0.11525299"
-       width="1.2451613"
-       height="1.2440665"
+       x="-0.11774194"
+       y="-0.12372725"
+       width="1.2612903"
+       height="1.2559306"
        style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          in="SourceAlpha"
@@ -98,14 +98,14 @@
        fill="none"
        stroke-width="3.2"
        id="path4"
-       style="stroke-width:2;stroke-dasharray:none" />
+       style="stroke-width:2.5;stroke-dasharray:none" />
     <!-- murs -->
     <path
        d="M 13.99504,21.99504 V 39.058491 M 34.00496,21.99504 v 16.077124"
        fill="none"
        stroke-width="2.6"
        id="path5"
-       style="stroke-width:1.49;stroke-dasharray:none;stroke-miterlimit:0" />
+       style="stroke-width:1.79;stroke-dasharray:none;stroke-miterlimit:0" />
     <!-- porte -->
     <path
        d="M21.25 28.5 H26.75 V37.1 L25 37.4 L23.3 37.7 L21.25 37.2 Z"
@@ -119,6 +119,6 @@
        fill="none"
        stroke-width="2.4"
        id="path7"
-       style="stroke-width:1.2;stroke-dasharray:none;stroke-linejoin:miter" />
+       style="stroke-width:1.4;stroke-dasharray:none;stroke-linejoin:round" />
   </g>
 </svg>
